@@ -1,0 +1,37 @@
+.excel-reader-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  input[type='file'] {
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .no-data-message {
+    margin-top: 20px;
+    color: #777;
+    font-style: italic;
+  }
+  

@@ -1,0 +1,30 @@
+<div class="excel-reader-container">
+  <h2>Upload Excel File</h2>
+  <input type="file" (change)="onFileChange($event)" accept=".xlsx, .xls" />
+
+  <div *ngIf="excelData | keyvalue as categories" class="data-table-container">
+    <div *ngFor="let category of categories">
+      <h3>{{ category.key }}</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Nama Tamu</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of category.value">
+            <td>{{ row.Group }}</td>
+            <td>{{ row.NamaTamu }}</td>
+            <td>{{ row.Phone }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p *ngIf="!(excelData | keyvalue)?.length" class="no-data-message">
+    Silakan unggah file Excel untuk menampilkan data.
+  </p>
+</div>
