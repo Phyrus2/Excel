@@ -22,7 +22,7 @@ export class TampilanComponent {
         const data = new Uint8Array(e.target?.result as ArrayBuffer);
         const workbook = XLSX.read(data, { type: 'array' });
 
-        const sheetName = workbook.SheetNames[13]; // Sheet ke-14
+        const sheetName = workbook.SheetNames[9]; // Sheet ke-14
         const sheet = workbook.Sheets[sheetName];
 
         const jsonData: any[] = XLSX.utils.sheet_to_json(sheet, {
@@ -40,18 +40,38 @@ export class TampilanComponent {
         });
 
         const categorizedData: { [category: string]: { Group: string; NamaTamu: string; Phone: string }[] } = {};
-        let currentCategory = '';
-
         jsonData.forEach((row) => {
-          if (row['GROUP']?.startsWith('*')) {
-            currentCategory = row['GROUP']?.replace(/\*/g, '').trim();
-            if (!categorizedData[currentCategory]) {
-              categorizedData[currentCategory] = [];
-            }
-          } else if (row['GROUP'] && currentCategory) {
+          if (row['GROUP']) {
+            const groupPrefix = row['GROUP'].trim();
             const pickupPoint = row['Pickup Point'] || '';
             const phoneMatch = pickupPoint.match(/Phone:\s*([+\d]+)/);
             const phone = phoneMatch ? phoneMatch[1] : '';
+
+            // Exclude rows starting with "ENP"
+            if (groupPrefix.startsWith('ENP')) {
+              return; // Skip this row
+            }
+
+            let currentCategory = '';
+            if (groupPrefix.startsWith('EMP')) {
+              currentCategory = 'EAST & WEST SANUR MEETING POINT';
+            } else if (groupPrefix.startsWith('ET')) {
+              currentCategory = 'EAST TOUR FROM BALI';
+            } else if (groupPrefix.startsWith('A') || groupPrefix.startsWith('NA')) {
+              currentCategory = 'ALL INCLUSIVE FROM BALI';
+            } else if (groupPrefix.startsWith('WMP')) {
+              currentCategory = 'WEST SANUR MEETING POINT';
+            } else if (groupPrefix.startsWith('W')) {
+              currentCategory = 'WEST TOUR FROM BALI';
+            } else if (groupPrefix.startsWith('E')) {
+              currentCategory = 'EAST & WEST TOUR';
+            } else {
+              return; // Skip rows that don't match any of these categories
+            }
+
+            if (!categorizedData[currentCategory]) {
+              categorizedData[currentCategory] = [];
+            }
 
             categorizedData[currentCategory].push({
               Group: row['GROUP'],
@@ -62,6 +82,7 @@ export class TampilanComponent {
         });
 
         this.excelData = categorizedData;
+        console.log('Excel Data:', this.excelData);
       };
 
       reader.readAsArrayBuffer(file);

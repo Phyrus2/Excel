@@ -2,9 +2,10 @@
   <h2>Upload Excel File</h2>
   <input type="file" (change)="onFileChange($event)" accept=".xlsx, .xls" />
 
-  <div *ngIf="excelData | keyvalue as categories" class="data-table-container">
-    <div *ngFor="let category of categories">
-      <h3>{{ category.key }}</h3>
+  <div *ngIf="excelData | keyvalue as categories" class="data-tables-wrapper">
+    <!-- Loop through each category and display in a separate table -->
+    <div *ngFor="let category of categories" class="table-container">
+      <h3 class="category-title">{{ category.key }}</h3>
       <table class="data-table">
         <thead>
           <tr>
