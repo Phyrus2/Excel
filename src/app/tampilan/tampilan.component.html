@@ -3,7 +3,6 @@
   <input type="file" (change)="onFileChange($event)" accept=".xlsx, .xls" />
 
   <div *ngIf="excelData | keyvalue as categories" class="data-tables-wrapper">
-    <!-- Loop through each category and display in a separate table -->
     <div *ngFor="let category of categories" class="table-container">
       <h3 class="category-title">{{ category.key }}</h3>
       <table class="data-table">
@@ -12,6 +11,8 @@
             <th>Group</th>
             <th>Nama Tamu</th>
             <th>Phone</th>
+            <th>Email</th>
+            <th>Location</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -20,16 +21,17 @@
             <td>{{ row.Group }}</td>
             <td>{{ row.NamaTamu }}</td>
             <td>{{ row.Phone }}</td>
+            <td>{{ row.Email }}</td>
+            <td>{{ row.Location }}</td>
             <td>
               <button
-                *ngIf="row.Phone"
-                (click)="sendMessage(row)"
-                class="whatsapp-button"
+                *ngIf="row.Phone || row.Email"
+                (click)="showActionModal(row)"
+                class="action-button"
               >
-                Kirim WA
+                Action
               </button>
             </td>
-            
           </tr>
         </tbody>
       </table>
