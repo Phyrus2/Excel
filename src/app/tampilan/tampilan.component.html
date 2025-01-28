@@ -12,6 +12,7 @@
             <th>Group</th>
             <th>Nama Tamu</th>
             <th>Phone</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -19,6 +20,16 @@
             <td>{{ row.Group }}</td>
             <td>{{ row.NamaTamu }}</td>
             <td>{{ row.Phone }}</td>
+            <td>
+              <button
+                *ngIf="row.Phone"
+                (click)="sendMessage(row)"
+                class="whatsapp-button"
+              >
+                Kirim WA
+              </button>
+            </td>
+            
           </tr>
         </tbody>
       </table>

@@ -34,4 +34,18 @@
     color: #777;
     font-style: italic;
   }
+  .whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1da851;
+  }
   
