@@ -1,51 +1,141 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEF2F3; /* Latar belakang netral */
+  font-family: 'Arial', sans-serif;
+  color: #2D3E50; /* Warna teks utama */
+}
+
 .excel-reader-container {
-    margin: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  input[type='file'] {
-    margin-bottom: 20px;
-    padding: 5px;
-  }
-  
-  .data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .data-table th,
-  .data-table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .data-table th {
-    background-color: #f4f4f4;
-  }
-  
-  .no-data-message {
-    margin-top: 20px;
-    color: #777;
-    font-style: italic;
-  }
-  .whatsapp-button {
-    background-color: #25d366;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .whatsapp-button:hover {
-    background-color: #1da851;
-  }
-  
+  width: 100%;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #52796F;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 14px 22px;
+  background-color: #A7C7E7;
+  color: #2D3E50;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-button i {
+  margin-right: 10px;
+}
+
+.upload-button:hover {
+  background-color: #8DB8D9;
+}
+
+.data-tables-wrapper {
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.category-title {
+  margin-bottom: 15px;
+  color: #52796F;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.category-title i {
+  margin-right: 12px;
+  color: #B7E4C7; /* Hijau pastel untuk ikon kategori */
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #DCE1E3;
+  padding: 16px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #B7E4C7;
+  font-weight: bold;
+  color: #2D3E50;
+}
+
+.data-table th i {
+  margin-right: 10px;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #F1F5F9;
+}
+
+.data-table tr:hover {
+  background-color: #D6E6F2;
+}
+
+.action-button {
+  background-color: #A7C7E7;
+  color: #2D3E50;
+  font-size: 18px;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.action-button i {
+  margin-right: 10px;
+}
+
+.action-button:hover {
+  background-color: #8DB8D9;
+}
+
+.no-data-message {
+  text-align: center;
+  color: #6C757D;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.no-data-message i {
+  color: #52796F;
+  margin-right: 10px;
+}
