@@ -22,8 +22,9 @@ export class TampilanComponent {
       reader.onload = (e) => {
         const data = new Uint8Array(e.target?.result as ArrayBuffer);
         const workbook = XLSX.read(data, { type: 'array' });
-  
-        const sheetName = workbook.SheetNames[9]; // Sheet ke-14
+        const today = new Date();
+        const tomorrow = today.getDate();
+        const sheetName = workbook.SheetNames[tomorrow]; // Sheet ke-14
         const sheet = workbook.Sheets[sheetName];
   
         const jsonData: any[] = XLSX.utils.sheet_to_json(sheet, {
@@ -72,11 +73,14 @@ export class TampilanComponent {
               currentCategory = 'ALL INCLUSIVE FROM BALI';
             } else if (groupPrefix.startsWith('WMP.')) {
               currentCategory = 'WEST SANUR MEETING POINT';
-            } else if (groupPrefix.startsWith('W.')) {
+            } else if (groupPrefix.startsWith('W.')|| groupPrefix.startsWith('NW.')) {
               currentCategory = 'WEST TOUR FROM BALI';
             } else if (groupPrefix.startsWith('E.')) {
               currentCategory = 'EAST & WEST TOUR';
-            } else {
+            } else if (groupPrefix.startsWith('SW.')) {
+              currentCategory = 'SNORKELING MANTA POINT & WEST COAST TOUR';
+            }
+            else {
               return; // Skip rows that don't match any of these categories
             }
   
@@ -105,6 +109,30 @@ export class TampilanComponent {
   }
   
 
+  getCategory(group: string): { 
+    isCategoryE: boolean; 
+    isCategoryEMP: boolean; 
+    isCategoryET: boolean; 
+    isCategoryAorNA: boolean; 
+    isCategoryWMP: boolean; 
+    isCategoryW: boolean; 
+    isCategorySW: boolean; 
+} {
+    const trimmedGroup = group.trim();
+    return {
+        isCategoryE: trimmedGroup.startsWith('E.'),
+        isCategoryEMP: trimmedGroup.startsWith('EMP.'),
+        isCategoryET: trimmedGroup.startsWith('ET.'),
+        isCategoryAorNA: trimmedGroup.startsWith('A.') || trimmedGroup.startsWith('NA.'),
+        isCategoryWMP: trimmedGroup.startsWith('WMP.'),
+        isCategoryW: trimmedGroup.startsWith('W.') || trimmedGroup.startsWith('NW.'),
+        isCategorySW: trimmedGroup.startsWith('SW.')
+    };
+}
+
+
+
+
   sendMessage(row: { Group: string; NamaTamu: string; Phone: string; Pax: string; BookingCode: string, Email: string, Location: string }): void {
     const group = row.Group.trim();
     const isCategoryE = group.startsWith('E.');
@@ -112,8 +140,8 @@ export class TampilanComponent {
     const isCategoryET = group.startsWith('ET.');
     const isCategoryAorNA = group.startsWith('A.') || group.startsWith('NA.');
     const isCategoryWMP = group.startsWith('WMP.');
-    const isCategoryW = group.startsWith('W.'); // Periksa apakah kategori dimulai dengan "E"
-    
+    const isCategoryW = group.startsWith('W.') || group.startsWith('NW.'); // Periksa apakah kategori dimulai dengan "E"
+    const isCategorySW = group.startsWith('SW.');
     let message = '';
   
     if (isCategoryE) {
@@ -340,6 +368,44 @@ Thank you
 Karma
       `.trim();
     }
+    else if (isCategorySW) {
+      const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
+      const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
+      const pax = parseInt(row.Pax, 10) || 0; // Konversi Pax ke angka, default 0 jika tidak valid
+      const paxLabel = pax === 1 ? 'person' : 'people';
+      const namaTamu = row.NamaTamu.replace(/\s+/g, ' ').trim();
+  
+      message = `
+${row.Group},
+  
+Dear ${namaTamu}
+  
+Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the **Nusa Penida Trip** with the following details is confirmed:
+  
+* **Booking Code**  : ${bookingCode}
+* **Activity Date** : ${activityDate}
+* **Total Person**  : ${pax} ${paxLabel}
+
+Please note that your pick-up time will be between 5:45- 5:55 AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses. 
+
+Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach. 
+
+Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Thank you,
+Karma
+      `.trim();
+    }
     else {
       message = `Halo ${row.NamaTamu}, saya ingin menghubungi Anda melalui informasi dari file Excel.`.trim();
     }
@@ -365,7 +431,7 @@ Karma
     const isCategoryAorNA = group.startsWith('A.') || group.startsWith('NA.');
     const isCategoryWMP = group.startsWith('WMP.');
     const isCategoryW = group.startsWith('W.'); // Periksa apakah kategori dimulai dengan "E"
-    
+    const isCategorySW = group.startsWith('SW.');
     let message = '';
   
     if (isCategoryE) {
@@ -500,6 +566,24 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * **Activity Date** : ${activityDate}
 * **Total Person**  : ${pax} ${paxLabel}
 
+Please note that your pick-up time will be between 6:00-6:15 AM from ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. 
+
+Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 07:30 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, swimsuit, towel, walking shoes or trekking shoes, apply sunscreen, Towels and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
+
+Additionally, please bring some extra cash for restroom usage, shower and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Thank you
+Karma
       `.trim();
     }
 
@@ -521,6 +605,22 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * **Activity Date** : ${activityDate}
 * **Total Person**  : ${pax} ${paxLabel}
 
+Please note that you must arrive at Sanur Matahari Terbit Harbor at 8:00 AM for 8:30 AM boat departure. Our leader, Mr. Galung, can be reached at +62 813-5312-3400 and will assist you with the check-in process. If you have any trouble communicating with our leader, please head to the WIJAYA BUYUK FAST BOAT COUNTER located next to COCO MART EXPRESS for further assistance.
+
+During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
+
+Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Thank you,
+Karma
+
+Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
       `.trim();
     }
 
@@ -542,6 +642,58 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * **Activity Date** : ${activityDate}
 * **Total Person**  : ${pax} ${paxLabel}
 
+Please note that your pick-up time will be between 06:00-06:10 AM from ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. We are scheduled depart at 07:30 AM from Sanur port. 
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, swimsuit, towel, walking shoes or trekking shoes, apply sunscreen, Towels and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Enjoy some leisure time at the beautiful Diamond and Atuh Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
+
+Additionally, please bring some extra cash for restroom usage, shower and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Thank you
+Karma
+      `.trim();
+    }
+    else if (isCategorySW) {
+      const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
+      const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
+      const pax = parseInt(row.Pax, 10) || 0; // Konversi Pax ke angka, default 0 jika tidak valid
+      const paxLabel = pax === 1 ? 'person' : 'people';
+      const namaTamu = row.NamaTamu.replace(/\s+/g, ' ').trim();
+  
+      message = `
+${row.Group},
+  
+Dear ${namaTamu}
+  
+Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the **Nusa Penida Trip** with the following details is confirmed:
+  
+* **Booking Code**  : ${bookingCode}
+* **Activity Date** : ${activityDate}
+* **Total Person**  : ${pax} ${paxLabel}
+
+Please note that your pick-up time will be between 5:45- 5:55 AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses. 
+
+Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach. 
+
+Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Thank you,
+Karma
       `.trim();
     }
     else {
