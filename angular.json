@@ -34,7 +34,9 @@
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
-            }
+            },
+            "baseHref": "/Project/"
+
           },
           "configurations": {
             "production": {
