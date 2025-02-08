@@ -24,7 +24,7 @@ export class TampilanComponent {
         const workbook = XLSX.read(data, { type: 'array' });
         const today = new Date();
         const tomorrow = today.getDate();
-        const sheetName = workbook.SheetNames[6]; // Sheet ke-14
+        const sheetName = workbook.SheetNames[tomorrow]; // Sheet ke-14
         const sheet = workbook.Sheets[sheetName];
   
         const jsonData: any[] = XLSX.utils.sheet_to_json(sheet, {
