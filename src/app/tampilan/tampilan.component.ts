@@ -24,7 +24,7 @@ export class TampilanComponent {
         const workbook = XLSX.read(data, { type: 'array' });
         const today = new Date();
         const tomorrow = today.getDate();
-        const sheetName = workbook.SheetNames[tomorrow]; // Sheet ke-14
+        const sheetName = workbook.SheetNames[6]; // Sheet ke-14
         const sheet = workbook.Sheets[sheetName];
   
         const jsonData: any[] = XLSX.utils.sheet_to_json(sheet, {
@@ -101,6 +101,14 @@ export class TampilanComponent {
         });
   
         this.excelData = categorizedData;
+        if (Object.keys(this.excelData).length === 0) {
+          Swal.fire({
+            icon: 'warning',
+            title: 'Data Tour Tidak Ditemukan',
+            text: 'Pastikan file yang diunggah berisi data yang sesuai.',
+          });
+          return;
+        }      
         console.log('Excel Data:', this.excelData);
       };
   
@@ -412,15 +420,18 @@ Karma
   
     // Salin pesan ke clipboard
     navigator.clipboard.writeText(message)
-      .then(() => {
-        console.log('Pesan berhasil disalin ke clipboard');
-        // Buka WhatsApp tanpa pesan
-        const whatsappUrl = `https://wa.me/${row.Phone}`;
-        window.open(whatsappUrl, '_blank');
-      })
-      .catch(err => {
-        console.error('Gagal menyalin pesan ke clipboard: ', err);
-      });
+    .then(() => {
+      console.log('Pesan berhasil disalin ke clipboard');
+      
+      // Buka WhatsApp Web di browser yang sedang digunakan
+      const whatsappUrl = `https://web.whatsapp.com/send?phone=${row.Phone}`;
+
+      window.open(whatsappUrl, '_blank');
+    })
+    .catch(err => {
+      console.error('Gagal menyalin pesan ke clipboard: ', err);
+    });
+
   }
 
   sendEmail(row: any): void {
@@ -466,6 +477,8 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
+Kindly replay this email via Whatsapp for effective communication +6287722748143 
+
 Thank you,
 Karma
       `.trim();
@@ -500,6 +513,8 @@ If you would like to spend extra time swimming at a beach you will be visiting t
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Kindly replay this email via Whatsapp for effective communication +6287722748143 
 
 Thank you,
 Karma
@@ -542,6 +557,8 @@ Upon your return to Sanur Harbor around 5:30 PM, please make your way back to th
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
+Kindly replay this email via Whatsapp for effective communication +6287722748143 
+
 Thank you,
 
 Karma 
@@ -582,6 +599,8 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
+Kindly replay this email via Whatsapp for effective communication +6287722748143 
+
 Thank you
 Karma
       `.trim();
@@ -616,6 +635,8 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Kindly replay this email via Whatsapp for effective communication +6287722748143 
 
 Thank you,
 Karma
@@ -654,6 +675,8 @@ Additionally, please bring some extra cash for restroom usage, shower and lunch.
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
+Kindly replay this email via Whatsapp for effective communication +6287722748143 
+
 Thank you
 Karma
       `.trim();
@@ -691,6 +714,8 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Kindly replay this email via Whatsapp for effective communication +6287722748143 
 
 Thank you,
 Karma
@@ -738,7 +763,7 @@ Karma
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
     const options: Intl.DateTimeFormatOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    return tomorrow.toLocaleDateString('id-ID', options); // Format dalam Bahasa Indonesia
+    return tomorrow.toLocaleDateString('en-US', options); // Format dalam Bahasa Indonesia
   }
   
   
