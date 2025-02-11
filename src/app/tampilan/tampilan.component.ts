@@ -394,9 +394,11 @@ Karma
       console.log('Pesan berhasil disalin ke clipboard');
       
       // Buka WhatsApp Web di browser yang sedang digunakan
-      const whatsappUrl = `https://web.whatsapp.com/send?phone=${row.Phone}`;
-
-      window.open(whatsappUrl, '_blank');
+      // const whatsappUrl = `https://web.whatsapp.com/send?phone=${row.Phone}`;
+       // Coba buka langsung aplikasi WhatsApp
+      //  window.open(whatsappUrl, '_blank');
+      
+        window.location.href = `whatsapp://send?phone=${row.Phone}`;
     })
     .catch(err => {
       console.error('Gagal menyalin pesan ke clipboard: ', err);
