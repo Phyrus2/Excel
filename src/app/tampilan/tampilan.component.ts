@@ -12,12 +12,14 @@ import Swal from 'sweetalert2';
 })
 export class TampilanComponent {
   excelData: { [category: string]: { Group: string; NamaTamu: string; Phone: string,Pax: string, BookingCode: string, Email: string, Location: string, PickupTime: string  }[] } = {};
+  bookingDate: string = '';
 
   onFileChange(event: Event): void {
     const target = event.target as HTMLInputElement;
     if (target?.files?.length) {
       const file = target.files[0];
       const reader = new FileReader();
+      this.bookingDate = this.getNextDayDate();
   
       reader.onload = (e) => {
         const data = new Uint8Array(e.target?.result as ArrayBuffer);
@@ -397,7 +399,7 @@ Karma
       // const whatsappUrl = `https://web.whatsapp.com/send?phone=${row.Phone}`;
        // Coba buka langsung aplikasi WhatsApp
       //  window.open(whatsappUrl, '_blank');
-      
+
         window.location.href = `whatsapp://send?phone=${row.Phone}`;
     })
     .catch(err => {

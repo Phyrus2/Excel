@@ -4,9 +4,11 @@
     <i class="fas fa-upload"></i> Pilih File
     <input type="file" (change)="onFileChange($event)" accept=".xlsx, .xls" hidden />
   </label>
-
   <div *ngIf="excelData | keyvalue as categories" class="data-tables-wrapper">
-    <div *ngFor="let category of categories" class="table-container">
+    <h2 *ngIf="bookingDate">
+      <i class="fas fa-calendar-alt bookingDate"></i> Booking Date: {{ bookingDate }}
+    </h2> 
+    <div *ngFor="let category of categories" class="table-container"> 
       <div class="card">
         <h3 class="category-title">
           <i class="fas fa-route"></i> {{ category.key }}
