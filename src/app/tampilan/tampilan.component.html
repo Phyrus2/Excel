@@ -19,6 +19,7 @@
               <tr>
                 <th><i class="fas fa-layer-group"></i> Group</th>
                 <th><i class="fas fa-user"></i> Nama Tamu</th>
+                <th><i class="fas fa-user"></i> Additional Info</th>
                 <th><i class="fas fa-phone"></i> Phone</th>
                 <th><i class="fas fa-envelope"></i> Email</th>
                 <th><i class="fas fa-map-marker-alt"></i> Location</th>
@@ -29,6 +30,7 @@
               <tr *ngFor="let row of category.value">
                 <td>{{ row.Group }}</td>
                 <td>{{ row.NamaTamu }}</td>
+                <td>{{ row.AdditionalInfo }}</td>
                 <td>{{ row.Phone }}</td>
                 <td>{{ row.Email }}</td>
                 <td>{{ row.Location }}</td>
