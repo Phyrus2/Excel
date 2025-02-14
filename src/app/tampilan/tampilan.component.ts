@@ -237,7 +237,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at Nike Villas, ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. 
+Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. 
 
 Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 07:00 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
