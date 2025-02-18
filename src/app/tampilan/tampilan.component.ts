@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import * as XLSX from 'xlsx';
 import Swal from 'sweetalert2';
@@ -10,9 +10,30 @@ import Swal from 'sweetalert2';
   templateUrl: './tampilan.component.html',
   styleUrls: ['./tampilan.component.css'],
 })
-export class TampilanComponent {
+export class TampilanComponent implements OnInit {
   excelData: { [category: string]: { Group: string; NamaTamu: string; Phone: string,Pax: string, BookingCode: string, Email: string, Location: string, PickupTime: string, AdditionalInfo: string  }[] } = {};
   bookingDate: string = '';
+
+  ngOnInit() {
+    this.askWhatsAppPreference(); // Selalu tanyakan pilihan saat website dibuka
+}
+
+  askWhatsAppPreference() {
+      Swal.fire({
+          title: 'Pilih Metode WhatsApp',
+          text: 'Ingin mengirim pesan via WhatsApp Web atau Aplikasi?',
+          icon: 'question',
+          showCancelButton: true,
+          confirmButtonText: 'WhatsApp Web',
+          cancelButtonText: 'WhatsApp App',
+      }).then((result) => {
+          if (result.isConfirmed) {
+              sessionStorage.setItem('whatsappPreference', 'web');
+          } else {
+              sessionStorage.setItem('whatsappPreference', 'app');
+          }
+      });
+  }
 
   onFileChange(event: Event): void {
     const target = event.target as HTMLInputElement;
@@ -127,6 +148,11 @@ export class TampilanComponent {
 
 
   sendMessage(row: { Group: string; NamaTamu: string; Phone: string; Pax: string; BookingCode: string, Email: string, Location: string, PickupTime: string, AdditionalInfo: string }): void {
+    const preference = sessionStorage.getItem('whatsappPreference'); // Ambil pilihan pengguna
+    if (!preference) {
+        console.error('WhatsApp preference not set.');
+        return;
+    }
     const group = row.Group.trim();
     const isCategoryE = group.startsWith('E.')|| group.startsWith('PE.');
     const isCategoryEMP = group.startsWith('EMP.');
@@ -397,14 +423,14 @@ Karma
     // Salin pesan ke clipboard
     navigator.clipboard.writeText(message)
     .then(() => {
-      console.log('Pesan berhasil disalin ke clipboard');
-      
-      // Buka WhatsApp Web di browser yang sedang digunakan
-      // const whatsappUrl = `https://web.whatsapp.com/send?phone=${row.Phone}`;
-       // Coba buka langsung aplikasi WhatsApp
-      //  window.open(whatsappUrl, '_blank');
+        console.log('Pesan berhasil disalin ke clipboard');
 
-        window.location.href = `whatsapp://send?phone=${row.Phone}`;
+        // Kirim pesan ke WhatsApp berdasarkan pilihan user
+        if (preference === 'web') {
+          window.open(`https://web.whatsapp.com/send?phone=${row.Phone}`, '_blank'); // Buka di tab baru
+      } else {
+          window.location.href = `whatsapp://send?phone=${row.Phone}`; // Buka di aplikasi WhatsApp
+      }
     })
     .catch(err => {
       console.error('Gagal menyalin pesan ke clipboard: ', err);
