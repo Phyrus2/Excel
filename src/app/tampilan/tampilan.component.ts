@@ -224,7 +224,40 @@ Karma
     else if (isCategoryEMP) {
      
   
-      message = `
+      if (row.AdditionalInfo.toLowerCase() === "nusa team") {
+        message = `
+${row.Group},
+          
+Dear Mr./Mrs ${namaTamu}
+          
+Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+          
+* Booking Code  : ${bookingCode}
+* Activity Date : ${activityDate}
+* Total Person  : ${pax} ${paxLabel}
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+Please note that you must arrive at Sanur Matahari Terbit Harbor at 8:00 AM for 8:30 AM boat departure. Our leader, Mr. Galung, can be reached at +62 813-5312-3400 and will assist you with the check-in process. If you have any trouble communicating with our leader, please head to the WIJAYA BUYUK FAST BOAT COUNTER located next to COCO MART EXPRESS for further assistance.
+
+During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
+
+Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Thank you,
+Karma
+
+Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
+      `.trim();
+      }
+            
+      
+      else{
+        message = `
 ${row.Group},
   
 Dear Mr./Mrs ${namaTamu}
@@ -235,13 +268,13 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that you must arrive at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. please proceed to the THE ANGKAL FAST BOAT office, which is located directly next to CK Mart (address provided in the link below), . Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
 
-When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
+During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
 
-If you would like to spend extra time swimming at a beach you will be visiting tomorrow, please discuss this with the driver to adjust the schedule before reaching Nusa Penida Port. If there is time available, the driver will be happy to accommodate your request. Feel free to bring your swimsuit. You might have the chance to go for a swim, especially when visiting Diamond Beach.
+Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
@@ -253,6 +286,7 @@ Karma
 CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
       `.trim();
     }
+  }
 
     else if (isCategoryAorNA) {
       
@@ -326,14 +360,14 @@ Karma
 
     else if (isCategoryWMP) {
       
-  
-      message = `
+      if (row.AdditionalInfo.toLowerCase() === "nusa team") {
+        message = `
 ${row.Group},
-  
+          
 Dear Mr./Mrs ${namaTamu}
-  
+          
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-  
+          
 * Booking Code  : ${bookingCode}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
@@ -355,7 +389,42 @@ Karma
 
 Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
       `.trim();
+      }
+            
+      
+      else{
+        message = `
+${row.Group},
+  
+Dear Mr./Mrs ${namaTamu}
+  
+Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+  
+* Booking Code  : ${bookingCode}
+* Activity Date : ${activityDate}
+* Total Person  : ${pax} ${paxLabel}
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+
+During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
+
+Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Thank you,
+Karma
+
+CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
+      `.trim();
     }
+  }
+      
+      
 
     else if (isCategoryET) {
       
@@ -606,15 +675,52 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
   
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
+
   Thank you,
   Karma
         `.trim();
       } 
   
       else if (isCategoryEMP) {
-       
-    
-        message = `
+     
+  
+        if (row.AdditionalInfo.toLowerCase() === "nusa team") {
+          message = `
+  ${row.Group},
+            
+  Dear Mr./Mrs ${namaTamu}
+            
+  Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+            
+  * Booking Code  : ${bookingCode}
+  * Activity Date : ${activityDate}
+  * Total Person  : ${pax} ${paxLabel}
+  ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+  Please note that you must arrive at Sanur Matahari Terbit Harbor at 8:00 AM for 8:30 AM boat departure. Our leader, Mr. Galung, can be reached at +62 813-5312-3400 and will assist you with the check-in process. If you have any trouble communicating with our leader, please head to the WIJAYA BUYUK FAST BOAT COUNTER located next to COCO MART EXPRESS for further assistance.
+  
+  During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+  
+  To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+  
+  Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
+  
+  Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+  
+  If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
+  
+  Thank you,
+  Karma
+  
+  Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
+        `.trim();
+        }
+              
+        
+        else{
+          message = `
   ${row.Group},
     
   Dear Mr./Mrs ${namaTamu}
@@ -625,17 +731,19 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   * Activity Date : ${activityDate}
   * Total Person  : ${pax} ${paxLabel}
   ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-  Please note that you must arrive at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. please proceed to the THE ANGKAL FAST BOAT office, which is located directly next to CK Mart (address provided in the link below), . Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+  Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
   
-  When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
+  During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
   
-  To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+  To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
   
-  If you would like to spend extra time swimming at a beach you will be visiting tomorrow, please discuss this with the driver to adjust the schedule before reaching Nusa Penida Port. If there is time available, the driver will be happy to accommodate your request. Feel free to bring your swimsuit. You might have the chance to go for a swim, especially when visiting Diamond Beach.
+  Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
   
   Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you,
   Karma
@@ -643,6 +751,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
         `.trim();
       }
+    }
   
       else if (isCategoryAorNA) {
         
@@ -673,6 +782,8 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   Upon your return to Sanur Harbor around 5:30 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you,
   Karma 
@@ -708,6 +819,8 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   For your return journey, the boat is scheduled to depart from Nusa Penida at 4:00 PM/ 4:30 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you,
   Karma
@@ -715,15 +828,15 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
       }
   
       else if (isCategoryWMP) {
-        
-    
-        message = `
+      
+        if (row.AdditionalInfo.toLowerCase() === "nusa team") {
+          message = `
   ${row.Group},
-    
+            
   Dear Mr./Mrs ${namaTamu}
-    
+            
   Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-    
+            
   * Booking Code  : ${bookingCode}
   * Activity Date : ${activityDate}
   * Total Person  : ${pax} ${paxLabel}
@@ -739,13 +852,50 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you,
   Karma
   
   Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
         `.trim();
+        }
+              
+        
+        else{
+          message = `
+  ${row.Group},
+    
+  Dear Mr./Mrs ${namaTamu}
+    
+  Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+    
+  * Booking Code  : ${bookingCode}
+  * Activity Date : ${activityDate}
+  * Total Person  : ${pax} ${paxLabel}
+  ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+  Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+  
+  During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+  
+  To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+  
+  Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
+  
+  Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+  
+  If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
+  
+  Thank you,
+  Karma
+  
+  CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
+        `.trim();
       }
+    }
   
       else if (isCategoryET) {
         
@@ -772,6 +922,8 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   Additionally, please bring some extra cash for restroom usage, shower and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you
   Karma
@@ -806,6 +958,8 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you,
   Karma
@@ -838,6 +992,8 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you
   Karma
@@ -870,6 +1026,8 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you
   Karma
@@ -905,6 +1063,8 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
   
   If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
   
   Thank you,
   Karma
