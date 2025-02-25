@@ -229,7 +229,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Total Person  : ${x} ${D}
 ${N?`* Add on       : ${N}
 `:""}
-Please note that your pick-up time will be between ${n.PickupTime} - ${R} AM from ${n.Location}, Jalan Hard Rock Hotel Kabupaten Badung. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
+Please note that your pick-up time will be between ${n.PickupTime} - ${R} AM from ${n.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
 We apologize for the slight adjustment in the pick-up time due to  The scheduled departure time from Sanur Port is at 7:30 AM so that we can arrive in Nusa Penida earlier and cover all the destinations as planned. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
@@ -583,7 +583,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   * Total Person  : ${p} ${x}
   ${L?`* Add on       : ${L}
 `:""}
-  Please note that your pick-up time will be between ${n.PickupTime} - ${j} AM from ${n.Location}, Jalan Hard Rock Hotel Kabupaten Badung. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
+  Please note that your pick-up time will be between ${n.PickupTime} - ${j} AM from ${n.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
   
   We apologize for the slight adjustment in the pick-up time due to  The scheduled departure time from Sanur Port is at 7:30 AM so that we can arrive in Nusa Penida earlier and cover all the destinations as planned. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
   
