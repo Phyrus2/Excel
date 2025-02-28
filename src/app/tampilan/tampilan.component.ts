@@ -46,8 +46,12 @@ export class TampilanComponent implements OnInit {
         const data = new Uint8Array(e.target?.result as ArrayBuffer);
         const workbook = XLSX.read(data, { type: 'array' });
         const today = new Date();
-        const tomorrow = today.getDate();
-        const sheetName = workbook.SheetNames[tomorrow]; // Sheet ke-14
+        const day = today.getDate();
+        const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
+
+        const sheetIndex = day === lastDayOfMonth ? 0 : day; // If today is the last day, use 0
+
+        const sheetName = workbook.SheetNames[sheetIndex]; 
         const sheet = workbook.Sheets[sheetName];
   
         const jsonData: any[] = XLSX.utils.sheet_to_json(sheet, {
