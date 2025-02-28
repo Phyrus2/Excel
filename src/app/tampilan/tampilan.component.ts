@@ -110,6 +110,9 @@ export class TampilanComponent implements OnInit {
             else if (groupPrefix.startsWith('IBH.')) {
               currentCategory = 'ISLAND BEACH HIGHLIGHTS SWIM & HIKE TOUR';
             }
+            else if (groupPrefix.startsWith('IBH.')) {
+              currentCategory = 'ISLAND BEACH HIGHLIGHTS SWIM & HIKE TOUR';
+            }
             else {
               return; // Skip rows that don't match any of these categories
             }
@@ -161,7 +164,7 @@ export class TampilanComponent implements OnInit {
         return;
     }
     const group = row.Group.trim();
-    const isCategoryE = group.startsWith('E.')|| group.startsWith('PE.');
+    const isCategoryE = group.startsWith('E.');
     const isCategoryEMP = group.startsWith('EMP.');
     const isCategoryET = group.startsWith('ET.');
     const isCategoryAorNA = group.startsWith('A.') || group.startsWith('NA.');
@@ -170,6 +173,7 @@ export class TampilanComponent implements OnInit {
     const isCategorySW = group.startsWith('SW.');
     const isCategoryIBH = group.startsWith('IBH.');
     const isCategorySMP = group.startsWith('SMP.');
+    const isCategoryPE = group.startsWith('PE.');
     let message = '';
     const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
       const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
@@ -595,6 +599,38 @@ Karma
 CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
       `.trim();
     }
+    else if (isCategoryPE) {
+      
+  
+      message = `
+${row.Group},
+  
+Dear Mr./Mrs ${namaTamu}
+  
+Greetings from TripGotik, a KKDAY partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+  
+* Booking Code  : ${bookingCode}
+* Activity Date : ${activityDate}
+* Total Person  : ${pax} ${paxLabel}
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group pickup service, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
+
+Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+Thank you,
+Karma
+      `.trim();
+    }
     
     else {
       message = `Halo ${row.NamaTamu}, saya ingin menghubungi Anda melalui informasi dari file Excel.`.trim();
@@ -620,7 +656,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
 
   sendEmail(row: any): void {
     const group = row.Group.trim();
-    const isCategoryE = group.startsWith('E.')|| group.startsWith('PE.');
+    const isCategoryE = group.startsWith('E.');
     const isCategoryEMP = group.startsWith('EMP.');
     const isCategoryET = group.startsWith('ET.');
     const isCategoryAorNA = group.startsWith('A.') || group.startsWith('NA.');
@@ -629,6 +665,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
     const isCategorySW = group.startsWith('SW.');
     const isCategoryIBH = group.startsWith('IBH.');
     const isCategorySMP = group.startsWith('SMP.');
+    const isCategoryPE = group.startsWith('PE.');
     let message = '';
     const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
       const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
@@ -1074,6 +1111,41 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
   Karma
   
   CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
+        `.trim();
+      }
+
+      else if (isCategoryPE) {
+      
+  
+        message = `
+  ${row.Group},
+    
+  Dear Mr./Mrs ${namaTamu}
+    
+  Greetings from TripGotik, a KKDAY partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+    
+  * Booking Code  : ${bookingCode}
+  * Activity Date : ${activityDate}
+  * Total Person  : ${pax} ${paxLabel}
+  ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+  Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group pickup service, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+  
+  For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
+  
+  To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
+  
+  Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+  
+  Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+  
+  Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
+  
+  If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+  Kindly replay this email via Whatsapp for effective communication +6287722748143 
+  
+  Thank you,
+  Karma
         `.trim();
       }
       
