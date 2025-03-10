@@ -466,7 +466,7 @@ Karma
     }
     else if (isCategorySW) {
       
-      if (row.AdditionalInfo && row.AdditionalInfo.includes("Private Tour")) {
+      if (row.AdditionalInfo && (row.AdditionalInfo.includes("Private Tour") || row.AdditionalInfo.includes("PRIVATE TOUR"))) {
       message = `
 ${row.Group},
 
@@ -478,7 +478,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. 
+Please note that your pick-up time will be at ${row.PickupTime} AM from ${row.Location}. 
 
 The driver will assist you with the check in process in Bali harbor. For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
@@ -1005,7 +1005,7 @@ Karma
       }
       else if (isCategorySW) {
       
-        if (row.AdditionalInfo && row.AdditionalInfo.includes("Private Tour")) {
+        if (row.AdditionalInfo && (row.AdditionalInfo.includes("Private Tour") || row.AdditionalInfo.includes("PRIVATE TOUR"))) {
         message = `
 ${row.Group},
   
@@ -1017,7 +1017,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. 
+Please note that your pick-up time will be at ${row.PickupTime} AM from ${row.Location}. 
   
 The driver will assist you with the check in process in Bali harbor. For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
   

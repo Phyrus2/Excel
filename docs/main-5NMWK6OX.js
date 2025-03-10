@@ -329,7 +329,7 @@ If you have any questions or need further assistance regarding this booking, ple
 
 Thank\xA0you
 Karma
-      `.trim():u?n.AdditionalInfo&&n.AdditionalInfo.includes("Private Tour")?w=`
+      `.trim():u?n.AdditionalInfo&&(n.AdditionalInfo.includes("Private Tour")||n.AdditionalInfo.includes("PRIVATE TOUR"))?w=`
 ${n.Group},
 
 Dear Mr./Mrs ${E}
@@ -341,7 +341,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Total Person  : ${_} ${D}
 ${j?`* Add on       : ${j}
 `:""}
-Please note that your pick-up time will be between ${n.PickupTime} - ${k} AM from ${n.Location}. 
+Please note that your pick-up time will be at ${n.PickupTime} AM from ${n.Location}. 
 
 The driver will assist you with the check in process in Bali harbor. For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
@@ -749,7 +749,7 @@ Kindly replay this email via Whatsapp for effective communication\xA0+6287722748
   
 Thank\xA0you
 Karma
-        `.trim():l?n.AdditionalInfo&&n.AdditionalInfo.includes("Private Tour")?m=`
+        `.trim():l?n.AdditionalInfo&&(n.AdditionalInfo.includes("Private Tour")||n.AdditionalInfo.includes("PRIVATE TOUR"))?m=`
 ${n.Group},
   
 Dear Mr./Mrs ${D}
@@ -761,7 +761,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Total Person  : ${x} ${_}
 ${F?`* Add on       : ${F}
 `:""}
-Please note that your pick-up time will be between ${n.PickupTime} - ${P} AM from ${n.Location}. 
+Please note that your pick-up time will be at ${n.PickupTime} AM from ${n.Location}. 
   
 The driver will assist you with the check in process in Bali harbor. For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
   
