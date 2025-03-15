@@ -102,7 +102,7 @@ export class TampilanComponent implements OnInit {
               currentCategory = 'WEST SANUR MEETING POINT';
             } else if (groupPrefix.startsWith('W.')|| groupPrefix.startsWith('NW.')) {
               currentCategory = 'WEST TOUR FROM BALI';
-            } else if (groupPrefix.startsWith('E.')|| groupPrefix.startsWith('PE.')) {
+            } else if (groupPrefix.startsWith('E.')|| groupPrefix.startsWith('PE.')|| groupPrefix.startsWith('NE.')) {
               currentCategory = 'EAST & WEST TOUR';
             } else if (groupPrefix.startsWith('SW.')|| groupPrefix.startsWith('SMP.')) {
               currentCategory = 'SNORKELING MANTA POINT & WEST COAST TOUR';
@@ -164,7 +164,7 @@ export class TampilanComponent implements OnInit {
         return;
     }
     const group = row.Group.trim();
-    const isCategoryE = group.startsWith('E.');
+    const isCategoryE = group.startsWith('E.')|| group.startsWith('NE.');
     const isCategoryEMP = group.startsWith('EMP.');
     const isCategoryET = group.startsWith('ET.');
     const isCategoryAorNA = group.startsWith('A.') || group.startsWith('NA.');
@@ -689,7 +689,7 @@ Karma
 
   sendEmail(row: any): void {
     const group = row.Group.trim();
-    const isCategoryE = group.startsWith('E.');
+    const isCategoryE = group.startsWith('E.')|| group.startsWith('NE.');
     const isCategoryEMP = group.startsWith('EMP.');
     const isCategoryET = group.startsWith('ET.');
     const isCategoryAorNA = group.startsWith('A.') || group.startsWith('NA.');
