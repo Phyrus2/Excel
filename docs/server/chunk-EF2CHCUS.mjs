@@ -1106,6 +1106,8 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
+Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143
+
 Thank you,
 Karma
 
@@ -1125,6 +1127,8 @@ ${C?`* Add on       : ${C}
 Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at \u202A+62 811-3993-366\u202C.  Here's the location link for your convenience: https://maps.app.goo.gl/z374AsynJgWA33eLA?g_st=iwb
 
 To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.
+
+Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143
 
 Thank you,
 Karma
