@@ -707,8 +707,10 @@ Karma
   }
     else if (isCategorySMP) {
       
-  
-      message = `
+if (
+      (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") 
+    ) {
+       message = `
 ${row.Group},
   
 Dear Mr./Mrs ${namaTamu}
@@ -741,6 +743,28 @@ Karma
 CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
       `.trim();
     }
+    else {
+       message = `
+${row.Group},
+  
+Dear Mr./Mrs ${namaTamu}
+  
+Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+  
+* Booking Code  : ${bookingCode}
+* Activity Date : ${activityDate}
+* Total Person  : ${pax} ${paxLabel}
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at ‪+62 811-3993-366‬.  Here's the location link for your convenience: https://maps.app.goo.gl/z374AsynJgWA33eLA?g_st=iwb
+
+To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.
+
+Thank you,
+Karma
+      `.trim();
+    }
+    }  
+     
     else if (isCategoryPE) {
       
   
@@ -1364,44 +1388,65 @@ Karma
         `.trim();
         }
       }
-      else if (isCategorySMP) {
-        
-    
-        message = `
+       else if (isCategorySMP) {
+      
+if (
+      (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") 
+    ) {
+       message = `
 ${row.Group},
-    
+  
 Dear Mr./Mrs ${namaTamu}
-    
+  
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-    
+  
 * Booking Code  : ${bookingCode}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 Please note that you must arrive at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. please proceed to the THE ANGKAL FAST BOAT office, which is located directly next to CK Mart (address provided in the link below), . Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
-  
+
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-  
+
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.
-  
+
 Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach.
-  
+
 Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
+
 Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
+
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
-  
+
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-Kindly reply this email via Whatsapp for effective communication +6287722748143 
-  
 Thank you,
 Karma
-  
+
 CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
-        `.trim();
-      }
+      `.trim();
+    }
+    else {
+       message = `
+${row.Group},
+  
+Dear Mr./Mrs ${namaTamu}
+  
+Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+  
+* Booking Code  : ${bookingCode}
+* Activity Date : ${activityDate}
+* Total Person  : ${pax} ${paxLabel}
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at ‪+62 811-3993-366‬.  Here's the location link for your convenience: https://maps.app.goo.gl/z374AsynJgWA33eLA?g_st=iwb
+
+To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.
+
+Thank you,
+Karma
+      `.trim();
+    }
+    }  
 
       else if (isCategoryPE) {
       
