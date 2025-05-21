@@ -880,7 +880,7 @@ Option: From Nusa | Small Group Tour with Nusa Penida Meeting Points
 Booking Reference Code: ${bookingCode}
 Date: ${activityDate}
 Total Person(s): ${pax} ${paxLabel}
-
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 To ensure a smooth and timely arrangement, our driver will contact you one day prior to your service date to reconfirm the schedule and meeting point via WhatsApp.
 
 INCLUDED:
@@ -926,7 +926,7 @@ Option: East OR West Car Hire | Half-Day East/West | Pickup From Hotel/Port in N
 Booking Reference Code: ${bookingCode}
 Date: ${activityDate}
 Total Person(s): ${pax} ${paxLabel}
-
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 To ensure a smooth and timely arrangement, kindly provide us with your pickup location (hotel or port). Our driver will also contact you one day prior to your service date to reconfirm the schedule and meeting point.
 
 Regarding your selected option: Half-Day East or West | Pickup from Hotel or Port – Nusa Penida, please note that this package covers only one side of the island.
@@ -974,7 +974,7 @@ Option: East OR West Car Hire | Half-Day East/West | Pickup From Hotel/Port in N
 Booking Reference Code: ${bookingCode}
 Date: ${activityDate}
 Total Person(s): ${pax} ${paxLabel}
-
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 To ensure a smooth and timely arrangement, our driver will contact you one day prior to your service date to reconfirm the schedule and meeting point via WhatsApp.
 
 Regarding your selected option: Half-Day East or West | Pickup from Hotel or Port – Nusa Penida, please note that this package covers only one side of the island.
@@ -1777,7 +1777,7 @@ Option: From Nusa | Small Group Tour with Nusa Penida Meeting Points
 Booking Reference Code: ${bookingCode}
 Date: ${activityDate}
 Total Person(s): ${pax} ${paxLabel}
-
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 To ensure a smooth and timely arrangement, our driver will contact you one day prior to your service date to reconfirm the schedule and meeting point via WhatsApp.
 
 INCLUDED:
@@ -1823,7 +1823,7 @@ Option: East OR West Car Hire | Half-Day East/West | Pickup From Hotel/Port in N
 Booking Reference Code: ${bookingCode}
 Date: ${activityDate}
 Total Person(s): ${pax} ${paxLabel}
-
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 To ensure a smooth and timely arrangement, kindly provide us with your pickup location (hotel or port). Our driver will also contact you one day prior to your service date to reconfirm the schedule and meeting point.
 
 Regarding your selected option: Half-Day East or West | Pickup from Hotel or Port – Nusa Penida, please note that this package covers only one side of the island.
@@ -1871,7 +1871,7 @@ Option: East OR West Car Hire | Half-Day East/West | Pickup From Hotel/Port in N
 Booking Reference Code: ${bookingCode}
 Date: ${activityDate}
 Total Person(s): ${pax} ${paxLabel}
-
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 To ensure a smooth and timely arrangement, our driver will contact you one day prior to your service date to reconfirm the schedule and meeting point via WhatsApp.
 
 Regarding your selected option: Half-Day East or West | Pickup from Hotel or Port – Nusa Penida, please note that this package covers only one side of the island.
