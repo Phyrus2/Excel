@@ -86,10 +86,7 @@ export class TampilanComponent implements OnInit {
             const locationMatch = pickupPoint.match(/📍(.*)/);
             const location = locationMatch ? locationMatch[1].trim() : '';
   
-            // Exclude rows starting with "ENP"
-            if (groupPrefix.startsWith('ENP')) {
-              return; // Skip this row
-            }
+           
   
             let currentCategory = '';
             if (groupPrefix.startsWith('EMP.')) {
@@ -112,6 +109,9 @@ export class TampilanComponent implements OnInit {
             }
             else if (groupPrefix.startsWith('IBH.')) {
               currentCategory = 'ISLAND BEACH HIGHLIGHTS SWIM & HIKE TOUR';
+            }
+            else if (groupPrefix.startsWith('ENP.')|| groupPrefix.startsWith('CH.')) {
+              currentCategory = 'NUSA PENIDA MEETING POINT';
             }
             else {
               return; // Skip rows that don't match any of these categories
@@ -174,6 +174,8 @@ export class TampilanComponent implements OnInit {
     const isCategoryNI = group.startsWith('NI.');
     const isCategorySMP = group.startsWith('SMP.');
     const isCategoryPE = group.startsWith('PE.');
+    const isCategoryENP = group.startsWith('ENP.');
+    const isCategoryCH = group.startsWith('CH.');
     let message = '';
     const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
       const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
@@ -210,9 +212,25 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+INCLUDED:
+* Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide cum driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
 
-For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+EXCLUDED:
+* Photo fee in Tree House Beach (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+For tomorrow we are scheduled to depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
 
@@ -224,15 +242,13 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-Thank you,
+Thank you,
 Karma
       `.trim();
     } 
 
     else if (isCategoryEMP) {
-     
-  
-      if (row.AdditionalInfo.toLowerCase() === "nusa team") {
+   
         message = `
 ${row.Group},
           
@@ -244,38 +260,22 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that you must arrive at Sanur Matahari Terbit Harbor at 8:00 AM for 8:30 AM boat departure. Our leader, Mr. Galung, can be reached at +62 813-5312-3400 and will assist you with the check-in process. If you have any trouble communicating with our leader, please head to the WIJAYA BUYUK FAST BOAT COUNTER located next to COCO MART EXPRESS for further assistance.
+INCLUDED:
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide cum driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
 
-During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+EXCLUDED:
+* Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
+* Photo fee in Tree House Beach (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
 
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-
-Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
-
-Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-Thank you,
-Karma
-
-Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
-      `.trim();
-      }
-            
-      
-      else{
-        message = `
-${row.Group},
-  
-Dear Mr./Mrs ${namaTamu}
-  
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-  
-* Booking Code  : ${bookingCode}
-* Activity Date : ${activityDate}
-* Total Person  : ${pax} ${paxLabel}
-${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
 
 During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
@@ -293,7 +293,7 @@ Karma
 
 CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
       `.trim();
-    }
+      
   }
 
     else if (isCategoryAorNA) {
@@ -310,6 +310,22 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+INCLUDED:
+* Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide cum driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Photo fee in Tree House Beach 
+* Parking fees
+
+EXCLUDED:
+* Meals
+* Personal expenses
+* Tips/gratuities
+
 Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. 
 
 Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 07:30 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
@@ -327,7 +343,7 @@ Upon your return to Sanur Harbor around 5:30 PM, please make your way back to th
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
 Thank you,
-Karma 
+Karma
       `.trim();
     }
 
@@ -797,10 +813,209 @@ Thank you,
 Karma
       `.trim();
     }
-    
+  
+else if (isCategoryENP) {
+      
+       if (!row.Location || row.Location.trim() === "" || row.Location === "null") {
+      message = `
+${row.Group},
+
+Dear Mr./Mrs ${namaTamu}
+  
+Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
+
+We hope this message finds you well.
+
+We are reaching out regarding your Nusa Penida booking (please find the details attached) to clarify some important points about the services included in your selected package.
+
+Your booking is for the “Small Group Tour with Nusa Penida Meeting Point (From Nusa Penida)”. Kindly note that this option does not include the following:
+
+1. Hotel pickup from your accommodation in Bali.
+2. Round Trip ferry tickets between Bali and Nusa Penida.
+3. Tourist entrance fee to Nusa Penida (IDR 25,000 per person)
+
+To complete your trip, you have the following options:
+1. Arrange your own transportation: You can independently book transport from your hotel to Sanur Harbor and purchase ferry tickets to Nusa Penida. Please ensure that you arrive at the meeting point in Nusa Penida by 8:00 AM, and book the departure schedule back to Bali at 5:00 PM. This timing duration to make sure we can cover all itinerary that is mentioned in the website.
+2. Upgrade your booking: You may switch to the "From Bali | Small-Group Tour with Bali Transfer" option via the GetYourGuide app.
+3. If you have not enough time to make a change with your booking, you can Pay additional fees in cash for the missing services (transport, fast boat ticket, and Tourist entrance fee to Nusa Penida) in cash upon arrival.
+
+INCLUDED:
+* Full transportation service
+* 1 bottle of mineral water per person
+* English-speaking guide driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
+
+EXCLUDED:
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person)
+* Photo fee in Tree House (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+We understand that this may not have been fully clear during the booking process, and we sincerely apologize for any confusion or inconvenience caused. Our team is committed to ensuring your visit to Nusa Penida is seamless and memorable.
+
+Should you have any questions or need further assistance, please feel free to contact us at any time.
+
+Thank you once again for choosing Trip Gotik. We look forward to welcoming you soon.
+
+Warm regards,
+Karma
+      `.trim();
+    }
+    else{
+      message = `
+${row.Group},
+  
+Dear Mr./Mrs ${namaTamu}
+  
+Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
+
+We hope this message finds you well.
+
+We’re pleased to inform you that your booking is now fully confirmed with the following details:
+
+Title: Bali/Nusa Penida: East & West Highlights Full-Day Tour
+Option: From Nusa | Small Group Tour with Nusa Penida Meeting Points
+Booking Reference Code: ${bookingCode}
+Date: ${activityDate}
+Total Person(s): ${pax} ${paxLabel}
+
+To ensure a smooth and timely arrangement, our driver will contact you one day prior to your service date to reconfirm the schedule and meeting point via WhatsApp.
+
+INCLUDED:
+* Full transportation service
+* 1 bottle of mineral water per person
+* English-speaking guide driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
+
+EXCLUDED:
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person)
+* Photo fee in Tree House (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Should you have any questions or need further assistance, please feel free to contact us at any time.
+
+Thank you once again for choosing Trip Gotik. We look forward to welcoming you soon.
+
+Warm regards,
+Karma
+      `.trim();
+    }
+  }
+
+
+else if (isCategoryCH) {
+      
+      if (!row.Location || row.Location.trim() === "" || row.Location === "null") {
+      message = `
+${row.Group},
+
+Dear Mr./Mrs ${namaTamu}
+  
+Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
+We hope this message finds you well.
+
+We’re pleased to inform you that your booking is now fully confirmed with the following details:
+
+Title: Nusa Penida: Private Car Hire with Driver
+Option: East OR West Car Hire | Half-Day East/West | Pickup From Hotel/Port in Nusa Penida
+Booking Reference Code: ${bookingCode}
+Date: ${activityDate}
+Total Person(s): ${pax} ${paxLabel}
+
+To ensure a smooth and timely arrangement, kindly provide us with your pickup location (hotel or port). Our driver will also contact you one day prior to your service date to reconfirm the schedule and meeting point.
+
+Regarding your selected option: Half-Day East or West | Pickup from Hotel or Port – Nusa Penida, please note that this package covers only one side of the island.
+
+Here’s a quick overview of the itinerary options:
+👉 East Nusa Penida: Teletubbies Hill, Tree House (Molenteng), Atuh Beach, Diamond Beach
+👉 West Nusa Penida: Kelingking Beach, Broken Beach, Angel’s Billabong, Crystal Bay
+
+ INCLUDED:
+* Full transportation service (max. 6 hours duration)
+* One-side itinerary coverage (East or West Nusa Penida)
+* 1 bottle of mineral water per person
+* English-speaking driver
+* Parking fees
+
+EXCLUDED:
+* Nusa Penida entrance (retribution) fee
+* Entrance fees to tourist sites
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Should you have any questions or special requests, please feel free to reach out at any time.
+We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!
+
+Warm regards,
+Karma
+      `.trim();
+    }
+    else{
+      
+      message = `
+${row.Group},
+
+  
+Dear Mr./Mrs ${namaTamu}
+  
+Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
+We hope this message finds you well.
+
+We’re pleased to inform you that your booking is now fully confirmed with the following details:
+
+Title: Nusa Penida: Private Car Hire with Driver
+Option: East OR West Car Hire | Half-Day East/West | Pickup From Hotel/Port in Nusa Penida
+Booking Reference Code: ${bookingCode}
+Date: ${activityDate}
+Total Person(s): ${pax} ${paxLabel}
+
+To ensure a smooth and timely arrangement, our driver will contact you one day prior to your service date to reconfirm the schedule and meeting point via WhatsApp.
+
+Regarding your selected option: Half-Day East or West | Pickup from Hotel or Port – Nusa Penida, please note that this package covers only one side of the island.
+
+Here’s a quick overview of the itinerary options:
+
+👉 East Nusa Penida: Teletubbies Hill, Tree House (Molenteng), Atuh Beach, Diamond Beach
+👉 West Nusa Penida: Kelingking Beach, Broken Beach, Angel’s Billabong, Crystal Bay
+
+INCLUDED:
+* Full transportation service (max. 6 hours duration)
+* One-side itinerary coverage (East or West Nusa Penida)
+* 1 bottle of mineral water per person
+* English-speaking driver
+* Parking fees
+
+EXCLUDED:
+* Nusa Penida entrance (retribution) fee
+* Entrance fees to tourist sites
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Should you have any questions or special requests, please feel free to reach out at any time.
+We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!
+
+Warm regards,
+Karma
+
+      `.trim();
+    }
+  }
+
+
     else {
       message = `Halo ${row.NamaTamu}, saya ingin menghubungi Anda melalui informasi dari file Excel.`.trim();
     }
+
+
+
+
     
     // Salin pesan ke clipboard
     navigator.clipboard.writeText(message)
@@ -832,6 +1047,8 @@ Karma
     const isCategoryNI = group.startsWith('NI.');
     const isCategorySMP = group.startsWith('SMP.');
     const isCategoryPE = group.startsWith('PE.');
+    const isCategoryENP = group.startsWith('ENP.');
+    const isCategoryCH = group.startsWith('CH.');
     let message = '';
     const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
       const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
@@ -868,21 +1085,35 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
-  
-For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-  
+INCLUDED:
+* Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide cum driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
+
+EXCLUDED:
+* Photo fee in Tree House Beach (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+For tomorrow we are scheduled to depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
-  
+
 Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
+
 Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
+
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
-  
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-  
-Kindly reply this email via Whatsapp for effective communication +6287722748143 
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬
 
 Thank you,
 Karma
@@ -892,52 +1123,34 @@ Karma
       else if (isCategoryEMP) {
      
   
-        if (row.AdditionalInfo.toLowerCase() === "nusa team") {
-          message = `
-${row.Group},
-            
-Dear Mr./Mrs ${namaTamu}
-            
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-            
-* Booking Code  : ${bookingCode}
-* Activity Date : ${activityDate}
-* Total Person  : ${pax} ${paxLabel}
-${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that you must arrive at Sanur Matahari Terbit Harbor at 8:00 AM for 8:30 AM boat departure. Our leader, Mr. Galung, can be reached at +62 813-5312-3400 and will assist you with the check-in process. If you have any trouble communicating with our leader, please head to the WIJAYA BUYUK FAST BOAT COUNTER located next to COCO MART EXPRESS for further assistance.
-  
-During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-  
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, Swimming suit, towel, walking shoes or flip-flops, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
-Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience
-  
-Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-Kindly reply this email via Whatsapp for effective communication +6287722748143
-  
-Thank you,
-Karma
-  
-Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
-        `.trim();
-        }
-              
-        
-        else{
           message = `
 ${row.Group},
-    
+            
 Dear Mr./Mrs ${namaTamu}
-    
+            
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-    
+            
 * Booking Code  : ${bookingCode}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+INCLUDED:
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide cum driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
+
+EXCLUDED:
+* Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
+* Photo fee in Tree House Beach (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
 Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
 
 During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
@@ -948,16 +1161,13 @@ Nusa Penida is a relatively new destination that is not fully developed yet, giv
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-Kindly reply this email via Whatsapp for effective communication +6287722748143
+If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬
 
 Thank you,
 Karma
 
-CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16  
+CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
         `.trim();
-      }
     }
   
       else if (isCategoryAorNA) {
@@ -974,26 +1184,40 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. 
-  
-Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 07:30 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
-  
-When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards. 
-  
-If you would like to spend extra time swimming at a beach, you will have that time when you visit Diamond Beach. To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. 
-  
-Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
-Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
-Upon your return to Sanur Harbor around 5:30 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
-  
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+INCLUDED:
+* Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide cum driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Photo fee in Tree House Beach 
+* Parking fees
 
-Kindly reply this email via Whatsapp for effective communication +6287722748143 
-  
-Thank you,
-Karma 
+EXCLUDED:
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. 
+
+Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 07:30 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards. 
+
+If you would like to spend extra time swimming at a beach, you will have that time when you visit Diamond Beach. To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. 
+
+Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+Upon your return to Sanur Harbor around 5:30 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬
+
+Thank you,
+Karma
         `.trim();
       }
   
@@ -1487,6 +1711,201 @@ Karma
         `.trim();
       }
       
+else if (isCategoryENP) {
+      
+       if (!row.Location || row.Location.trim() === "" || row.Location === "null") {
+      message = `
+${row.Group},
+
+Dear Mr./Mrs ${namaTamu}
+  
+Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
+
+We hope this message finds you well.
+
+We are reaching out regarding your Nusa Penida booking (please find the details attached) to clarify some important points about the services included in your selected package.
+
+Your booking is for the “Small Group Tour with Nusa Penida Meeting Point (From Nusa Penida)”. Kindly note that this option does not include the following:
+
+1. Hotel pickup from your accommodation in Bali.
+2. Round Trip ferry tickets between Bali and Nusa Penida.
+3. Tourist entrance fee to Nusa Penida (IDR 25,000 per person)
+
+To complete your trip, you have the following options:
+1. Arrange your own transportation: You can independently book transport from your hotel to Sanur Harbor and purchase ferry tickets to Nusa Penida. Please ensure that you arrive at the meeting point in Nusa Penida by 8:00 AM, and book the departure schedule back to Bali at 5:00 PM. This timing duration to make sure we can cover all itinerary that is mentioned in the website.
+2. Upgrade your booking: You may switch to the "From Bali | Small-Group Tour with Bali Transfer" option via the GetYourGuide app.
+3. If you have not enough time to make a change with your booking, you can Pay additional fees in cash for the missing services (transport, fast boat ticket, and Tourist entrance fee to Nusa Penida) in cash upon arrival.
+
+INCLUDED:
+* Full transportation service
+* 1 bottle of mineral water per person
+* English-speaking guide driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
+
+EXCLUDED:
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person)
+* Photo fee in Tree House (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+We understand that this may not have been fully clear during the booking process, and we sincerely apologize for any confusion or inconvenience caused. Our team is committed to ensuring your visit to Nusa Penida is seamless and memorable.
+
+Should you have any questions or need further assistance, please feel free to contact us at any time.
+
+Thank you once again for choosing Trip Gotik. We look forward to welcoming you soon.
+
+Warm regards,
+Karma
+      `.trim();
+    }
+    else{
+      message = `
+${row.Group},
+  
+Dear Mr./Mrs ${namaTamu}
+  
+Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
+
+We hope this message finds you well.
+
+We’re pleased to inform you that your booking is now fully confirmed with the following details:
+
+Title: Bali/Nusa Penida: East & West Highlights Full-Day Tour
+Option: From Nusa | Small Group Tour with Nusa Penida Meeting Points
+Booking Reference Code: ${bookingCode}
+Date: ${activityDate}
+Total Person(s): ${pax} ${paxLabel}
+
+To ensure a smooth and timely arrangement, our driver will contact you one day prior to your service date to reconfirm the schedule and meeting point via WhatsApp.
+
+INCLUDED:
+* Full transportation service
+* 1 bottle of mineral water per person
+* English-speaking guide driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
+
+EXCLUDED:
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person)
+* Photo fee in Tree House (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Should you have any questions or need further assistance, please feel free to contact us at any time.
+
+Thank you once again for choosing Trip Gotik. We look forward to welcoming you soon.
+
+Warm regards,
+Karma
+      `.trim();
+    }
+  }
+
+
+else if (isCategoryCH) {
+      
+      if (!row.Location || row.Location.trim() === "" || row.Location === "null") {
+      message = `
+${row.Group},
+
+Dear Mr./Mrs ${namaTamu}
+  
+Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
+We hope this message finds you well.
+
+We’re pleased to inform you that your booking is now fully confirmed with the following details:
+
+Title: Nusa Penida: Private Car Hire with Driver
+Option: East OR West Car Hire | Half-Day East/West | Pickup From Hotel/Port in Nusa Penida
+Booking Reference Code: ${bookingCode}
+Date: ${activityDate}
+Total Person(s): ${pax} ${paxLabel}
+
+To ensure a smooth and timely arrangement, kindly provide us with your pickup location (hotel or port). Our driver will also contact you one day prior to your service date to reconfirm the schedule and meeting point.
+
+Regarding your selected option: Half-Day East or West | Pickup from Hotel or Port – Nusa Penida, please note that this package covers only one side of the island.
+
+Here’s a quick overview of the itinerary options:
+👉 East Nusa Penida: Teletubbies Hill, Tree House (Molenteng), Atuh Beach, Diamond Beach
+👉 West Nusa Penida: Kelingking Beach, Broken Beach, Angel’s Billabong, Crystal Bay
+
+ INCLUDED:
+* Full transportation service (max. 6 hours duration)
+* One-side itinerary coverage (East or West Nusa Penida)
+* 1 bottle of mineral water per person
+* English-speaking driver
+* Parking fees
+
+EXCLUDED:
+* Nusa Penida entrance (retribution) fee
+* Entrance fees to tourist sites
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Should you have any questions or special requests, please feel free to reach out at any time.
+We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!
+
+Warm regards,
+Karma
+      `.trim();
+    }
+    else{
+      
+      message = `
+${row.Group},
+
+  
+Dear Mr./Mrs ${namaTamu}
+  
+Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
+We hope this message finds you well.
+
+We’re pleased to inform you that your booking is now fully confirmed with the following details:
+
+Title: Nusa Penida: Private Car Hire with Driver
+Option: East OR West Car Hire | Half-Day East/West | Pickup From Hotel/Port in Nusa Penida
+Booking Reference Code: ${bookingCode}
+Date: ${activityDate}
+Total Person(s): ${pax} ${paxLabel}
+
+To ensure a smooth and timely arrangement, our driver will contact you one day prior to your service date to reconfirm the schedule and meeting point via WhatsApp.
+
+Regarding your selected option: Half-Day East or West | Pickup from Hotel or Port – Nusa Penida, please note that this package covers only one side of the island.
+
+Here’s a quick overview of the itinerary options:
+
+👉 East Nusa Penida: Teletubbies Hill, Tree House (Molenteng), Atuh Beach, Diamond Beach
+👉 West Nusa Penida: Kelingking Beach, Broken Beach, Angel’s Billabong, Crystal Bay
+
+INCLUDED:
+* Full transportation service (max. 6 hours duration)
+* One-side itinerary coverage (East or West Nusa Penida)
+* 1 bottle of mineral water per person
+* English-speaking driver
+* Parking fees
+
+EXCLUDED:
+* Nusa Penida entrance (retribution) fee
+* Entrance fees to tourist sites
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Should you have any questions or special requests, please feel free to reach out at any time.
+We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!
+
+Warm regards,
+Karma
+
+      `.trim();
+    }
+  }
+
+
       else {
         message = `Halo ${row.NamaTamu}, saya ingin menghubungi Anda melalui informasi dari file Excel.`.trim();
       }
