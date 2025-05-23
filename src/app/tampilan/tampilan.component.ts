@@ -215,10 +215,10 @@ ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
 * Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
-* Nusa Penida entrance (retribution) fee
+* Nusa Penida entrance (retribution) fee 
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
-* English-speaking guide cum driver
+* English-speaking guide driver
 * Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
@@ -262,10 +262,10 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
-* Nusa Penida entrance (retribution) fee
+* Nusa Penida entrance (retribution) fee 
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
-* English-speaking guide cum driver
+* English-speaking guide driver
 * Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
@@ -313,10 +313,10 @@ ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
 * Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
-* Nusa Penida entrance (retribution) fee
+* Nusa Penida entrance (retribution) fee 
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
-* English-speaking guide cum driver
+* English-speaking guide driver
 * Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Photo fee in Tree House Beach 
 * Parking fees
@@ -795,9 +795,25 @@ Greetings from TripGotik, a KKDAY partner. We are excited to inform you that you
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group pickup service, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+INCLUDED:
+* Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee 
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
 
-For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
+EXCLUDED:
+* Photo fee in Tree House Beach (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+For tomorrow we are scheduled to depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
 
@@ -809,7 +825,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-Thank you,
+Thank you,
 Karma
       `.trim();
     }
@@ -847,7 +863,7 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Nusa Penida entrance (retribution) fee (IDR 25,000 per person)
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person) if you just arrived in Nusa Penida Island
 * Photo fee in Tree House (IDR 75,000 per person)
 * Meals
 * Personal expenses
@@ -891,7 +907,7 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Nusa Penida entrance (retribution) fee (IDR 25,000 per person)
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person) if you just arrived in Nusa Penida Island
 * Photo fee in Tree House (IDR 75,000 per person)
 * Meals
 * Personal expenses
@@ -943,7 +959,7 @@ Here’s a quick overview of the itinerary options:
 * Parking fees
 
 EXCLUDED:
-* Nusa Penida entrance (retribution) fee
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person) if you just arrived in Nusa Penida Island
 * Entrance fees to tourist sites
 * Meals
 * Personal expenses
@@ -992,7 +1008,7 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Nusa Penida entrance (retribution) fee
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person) if you just arrived in Nusa Penida Island
 * Entrance fees to tourist sites
 * Meals
 * Personal expenses
@@ -1091,7 +1107,7 @@ INCLUDED:
 * Nusa Penida entrance (retribution) fee
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
-* English-speaking guide cum driver
+* English-speaking guide driver
 * Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
@@ -1140,7 +1156,7 @@ INCLUDED:
 * Nusa Penida entrance (retribution) fee
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
-* English-speaking guide cum driver
+* English-speaking guide driver
 * Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
@@ -1190,7 +1206,7 @@ INCLUDED:
 * Nusa Penida entrance (retribution) fee
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
-* English-speaking guide cum driver
+* English-speaking guide driver
 * Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Photo fee in Tree House Beach 
 * Parking fees
@@ -1690,22 +1706,36 @@ Greetings from TripGotik, a KKDAY partner. We are excited to inform you that you
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group pickup service, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
-  
-For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
-  
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
-  
-Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
-Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
-  
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+INCLUDED:
+* Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide driver
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Parking fees
 
-Kindly reply this email via Whatsapp for effective communication +6287722748143 
-  
+EXCLUDED:
+* Photo fee in Tree House Beach (IDR 75,000 per person)
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM at ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+For tomorrow we are scheduled to depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
+
+Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬
+
 Thank you,
 Karma
         `.trim();
@@ -1744,7 +1774,7 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Nusa Penida entrance (retribution) fee (IDR 25,000 per person)
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person) if you just arrived in Nusa Penida Island
 * Photo fee in Tree House (IDR 75,000 per person)
 * Meals
 * Personal expenses
@@ -1788,7 +1818,7 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Nusa Penida entrance (retribution) fee (IDR 25,000 per person)
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person) if you just arrived in Nusa Penida Island
 * Photo fee in Tree House (IDR 75,000 per person)
 * Meals
 * Personal expenses
@@ -1840,7 +1870,7 @@ Here’s a quick overview of the itinerary options:
 * Parking fees
 
 EXCLUDED:
-* Nusa Penida entrance (retribution) fee
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person) if you just arrived in Nusa Penida Island
 * Entrance fees to tourist sites
 * Meals
 * Personal expenses
@@ -1889,7 +1919,7 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Nusa Penida entrance (retribution) fee
+* Nusa Penida entrance (retribution) fee (IDR 25,000 per person) if you just arrived in Nusa Penida Island
 * Entrance fees to tourist sites
 * Meals
 * Personal expenses
