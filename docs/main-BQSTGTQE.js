@@ -425,7 +425,7 @@ Please note that your pick-up time will be at ${n.PickupTime} AM from ${n.Locati
 
 The driver will assist you with the check in process in Bali harbor. For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses. 
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, water-friendly footwear or comfortable sandals, apply sunscreen, and bring\xA0sunglasses.
 
 Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach. 
 
@@ -639,9 +639,9 @@ EXCLUDED:
 * Personal expenses
 * Tips/gratuities
 
-Please note that your pick-up time will be between ${n.PickupTime} - ${R} AM at ${n.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+Please note that your pick-up time will be between ${n.PickupTime} - ${R} AM from ${n.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group pickup service, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
 
-For tomorrow we are scheduled to depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
 
@@ -653,7 +653,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-Thank you,
+Thank\xA0you,
 Karma
       `.trim():y?!n.Location||n.Location.trim()===""||n.Location==="null"?w=`
 ${n.Group},
@@ -1164,7 +1164,7 @@ Please note that your pick-up time will be at ${n.PickupTime} AM from ${n.Locati
   
 The driver will assist you with the check in process in Bali harbor. For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
   
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses. 
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, water-friendly footwear or comfortable sandals, apply sunscreen, and bring\xA0sunglasses.
   
 Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach. 
   
