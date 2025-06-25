@@ -133,7 +133,7 @@ EXCLUDED:
 
 Please note that your pick-up time will be between ${n.PickupTime} - ${R} AM at ${n.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
 
-For tomorrow we are scheduled to depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+For tomorrow we are scheduled to depart at 7.00 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
 
@@ -221,7 +221,7 @@ EXCLUDED:
 
 Please note that your pick-up time will be between ${n.PickupTime} - ${R} AM at ${n.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. 
 
-Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 07:30 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 7.00 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards. 
 
@@ -251,7 +251,7 @@ ${M?`* Add on       : ${M}
 `:""}
 Please note that your pick-up time will be between ${n.PickupTime} - ${R} AM from ${n.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-We apologize for the slight adjustment in the pick-up time due to the scheduled departure time from Sanur Port is at 7:30 AM so that we can arrive in Nusa Penida earlier and cover all the destinations as planned. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM . Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
@@ -265,7 +265,7 @@ For your return journey, the boat is scheduled to depart from Nusa Penida at 4:0
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-Thank you,
+Thank\xA0you,
 Karma
       `.trim():c?String(n.PickupTime)==="7.00."&&n.AdditionalInfo?.toLowerCase()==="nusa team"?(console.log("nusa team and 7.00"),w=`
 ${n.Group},
@@ -641,7 +641,7 @@ EXCLUDED:
 
 Please note that your pick-up time will be between ${n.PickupTime} - ${R} AM from ${n.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group pickup service, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
 
-For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards Privately.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
 
@@ -860,7 +860,7 @@ EXCLUDED:
 
 Please note that your pick-up time will be between ${n.PickupTime} - ${j} AM at ${n.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
 
-For tomorrow we are scheduled to depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+For tomorrow we are scheduled to depart at 7.00 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
 
@@ -948,7 +948,7 @@ EXCLUDED:
 
 Please note that your pick-up time will be between ${n.PickupTime} - ${j} AM at ${n.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check in process in Bali harbor. 
 
-Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 07:30 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 7.00 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards. 
 
@@ -978,23 +978,23 @@ ${B?`* Add on       : ${B}
 `:""}
 Please note that your pick-up time will be between ${n.PickupTime} - ${j} AM from ${n.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
   
-We apologize for the slight adjustment in the pick-up time due to  The scheduled departure time from Sanur Port is at 7:30 AM so that we can arrive in Nusa Penida earlier and cover all the destinations as planned. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
-  
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM . Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
+
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-  
+
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, a swimsuit, towel, walking or trekking shoes, apply sunscreen, and bring sunglasses. Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
+
 Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand and take a refreshing swim. Remember to bring your swimsuit. Paid changing rooms and showers are available for your convenience.
-  
+
 Additionally, please bring some extra cash for restroom usage, showers, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
+
 For your return journey, the boat is scheduled to depart from Nusa Penida at 4:00 PM/ 4:30 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
-  
+
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
-  
-Thank you,
+
+Thank\xA0you,
 Karma
         `.trim():a?String(n.PickupTime)==="7.00."&&n.AdditionalInfo?.toLowerCase()==="nusa team"?(console.log("nusa team and 7.00"),p=`
   ${n.Group},
@@ -1391,7 +1391,7 @@ EXCLUDED:
 
 Please note that your pick-up time will be between ${n.PickupTime} - ${j} AM at ${n.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
 
-For tomorrow we are scheduled to depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+For tomorrow we are scheduled to depart at 7.00 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.  Feel free to bring your swimsuit. You will have the chance to go for a swim, especially when visiting Diamond Beach. 
 
