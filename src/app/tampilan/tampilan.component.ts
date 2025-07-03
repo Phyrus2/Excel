@@ -219,7 +219,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Entrance fees to: Diamond Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
 EXCLUDED:
@@ -267,7 +267,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Entrance fees to: Diamond Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
 EXCLUDED:
@@ -276,7 +276,7 @@ EXCLUDED:
 * Personal expenses
 * Tips/gratuities
 
-Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 6:30 AM for the 7:00 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
 
 During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
@@ -317,7 +317,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, 
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach
 * Photo fee in Tree House Beach 
 * Parking fees
 
@@ -804,7 +804,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Entrance fees to: Diamond Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
 EXCLUDED:
@@ -1111,7 +1111,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Entrance fees to: Diamond Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
 EXCLUDED:
@@ -1161,7 +1161,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Entrance fees to: Diamond Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
 EXCLUDED:
@@ -1170,7 +1170,7 @@ EXCLUDED:
 * Personal expenses
 * Tips/gratuities
 
-Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 6:30 AM for the 7:00 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
 
 During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
@@ -1210,7 +1210,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, 
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach
 * Photo fee in Tree House Beach 
 * Parking fees
 
@@ -1718,7 +1718,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Entrance fees to: Diamond Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
 * Parking fees
 
 EXCLUDED:
