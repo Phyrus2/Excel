@@ -223,7 +223,6 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Photo fee in Tree House Beach (IDR 75,000 per person)
 * Meals
 * Personal expenses
 * Tips/gratuities
@@ -273,7 +272,6 @@ INCLUDED:
 
 EXCLUDED:
 * Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
-* Photo fee in Tree House Beach (IDR 75,000 per person)
 * Meals
 * Personal expenses
 * Tips/gratuities
@@ -319,7 +317,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, 
 * Photo fee in Tree House Beach 
 * Parking fees
 
@@ -810,7 +808,6 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Photo fee in Tree House Beach (IDR 75,000 per person)
 * Meals
 * Personal expenses
 * Tips/gratuities
@@ -1118,7 +1115,6 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Photo fee in Tree House Beach (IDR 75,000 per person)
 * Meals
 * Personal expenses
 * Tips/gratuities
@@ -1170,7 +1166,6 @@ INCLUDED:
 
 EXCLUDED:
 * Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
-* Photo fee in Tree House Beach (IDR 75,000 per person)
 * Meals
 * Personal expenses
 * Tips/gratuities
@@ -1215,7 +1210,7 @@ INCLUDED:
 * Full transportation service in Nusa Penida
 * 1 bottle of mineral water per person
 * English-speaking guide driver
-* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, Broken Beach and Angel Billabong Beach
+* Entrance fees to: Diamond Beach, Tree House Beach, Kelingking Beach, 
 * Photo fee in Tree House Beach 
 * Parking fees
 
@@ -1727,7 +1722,6 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Photo fee in Tree House Beach (IDR 75,000 per person)
 * Meals
 * Personal expenses
 * Tips/gratuities
