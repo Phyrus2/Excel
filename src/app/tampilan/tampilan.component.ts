@@ -619,8 +619,7 @@ Karma
   else if (isCategoryNI) {
         
     if (
-      (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") || 
-      (row.AdditionalInfo && row.AdditionalInfo.toLowerCase() === "nusa team")
+      (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") 
     ) {
       message = `
 ${row.Group},
@@ -633,43 +632,6 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that you must arrive at Sanur Matahari Terbit Harbor at 7:00 AM for 7:30 AM boat departure. Our leader, Mr. Galung, can be reached at +62 813-5312-3400 and will assist you with the check-in process. If you have any trouble communicating with our leader, please head to the WIJAYA BUYUK FAST BOAT COUNTER located next to COCO MART EXPRESS for further assistance.
-
-During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. As part of your itinerary, you will be visiting Diamond Beach, Atuh Beach, and Kelingking Beach, which involve full trekking. Please be prepared for a physically demanding experience, as you will be descending and ascending over 100 meters with slopes ranging from 30 to 45 degrees. It is essential to wear good-quality trekking shoes and be in optimal physical condition.
-
-Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-
-If you would like to spend extra time swimming at a beach you will be visiting tomorrow, please discuss this with the driver to adjust the schedule before reaching Nusa Penida Port. If time allows, the driver will be happy to accommodate your request. Please bring your swimsuit and towel, as showers and changing rooms are available at an additional cost.
-
-Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-
-Thank you
-Karma
-
-Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
-    `.trim();
-    }
-    if (
-      (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") || 
-      (row.AdditionalInfo && row.AdditionalInfo.toLowerCase() === "angkal")
-    ) {
-      message = `
-${row.Group},
-
-Dear Mr./Mrs ${namaTamu}
-
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-
-* Booking Code  : ${bookingCode}
-* Activity Date : ${activityDate}
-* Total Person  : ${pax} ${paxLabel}
-${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-
 Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 8:00 AM for the 8:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
 
 During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
@@ -684,13 +646,13 @@ Additionally, please bring some extra cash for restroom usage, shower facilities
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-
-Thank you
+Thank you,
 Karma
 
 CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
     `.trim();
     }
+
     else{
       message = `
 ${row.Group},
@@ -705,7 +667,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-We apologize for the slight adjustment in the pick-up time due to the scheduled departure time from Sanur Port is at 7:30 AM so that we can arrive in Nusa Penida earlier and cover all the destinations as planned. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. As part of your itinerary, you will be visiting Diamond Beach, Atuh Beach, and Kelingking Beach, which involve full trekking. Please be prepared for a physically demanding experience, as you will be descending and ascending over 100 meters with slopes ranging from 30 to 45 degrees. It is essential to wear good-quality trekking shoes and be in optimal physical condition.
 
@@ -716,7 +678,6 @@ If you would like to spend extra time swimming at a beach you will be visiting t
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
 
 Thank you
 Karma
@@ -1526,8 +1487,8 @@ Karma
       else if (isCategoryNI) {
         
         if (
-          (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") || 
-          (row.AdditionalInfo && row.AdditionalInfo.toLowerCase() === "nusa team")
+          (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") 
+          
         ) {
           message = `
 ${row.Group},
@@ -1540,44 +1501,6 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that you must arrive at Sanur Matahari Terbit Harbor at 8:00 AM for 8:30 AM boat departure. Our leader, Mr. Galung, can be reached at +62 813-5312-3400 and will assist you with the check-in process. If you have any trouble communicating with our leader, please head to the WIJAYA BUYUK FAST BOAT COUNTER located next to COCO MART EXPRESS for further assistance.
-  
-During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-  
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. As part of your itinerary, you will be visiting Diamond Beach, Atuh Beach, and Kelingking Beach, which involve full trekking. Please be prepared for a physically demanding experience, as you will be descending and ascending over 100 meters with slopes ranging from 30 to 45 degrees. It is essential to wear good-quality trekking shoes and be in optimal physical condition.
-  
-Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
-If you would like to spend extra time swimming at a beach you will be visiting tomorrow, please discuss this with the driver to adjust the schedule before reaching Nusa Penida Port. If time allows, the driver will be happy to accommodate your request. Please bring your swimsuit and towel, as showers and changing rooms are available at an additional cost.
-  
-Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-Kindly reply this email via Whatsapp for effective communication +6287722748143
-  
-Thank you
-Karma
-  
-Coco Express Pantai Matahari Terbit:https://maps.app.goo.gl/ifDWG2fmto3LEMCF8 
-        `.trim();
-        }
-        if (
-          (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") || 
-          (row.AdditionalInfo && row.AdditionalInfo.toLowerCase() === "angkal")
-        ) {
-          message = `
-${row.Group},
-    
-Dear Mr./Mrs ${namaTamu}
-    
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-    
-* Booking Code  : ${bookingCode}
-* Activity Date : ${activityDate}
-* Total Person  : ${pax} ${paxLabel}
-${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-
 Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit (address provided in the link below), at Sanur Matahari Terbit Harbor at 8:00 AM for the 8:30 AM boat departure. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
 
 During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
@@ -1592,9 +1515,9 @@ Additionally, please bring some extra cash for restroom usage, shower facilities
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-Kindly reply this email via Whatsapp for effective communication +6287722748143 
+Kindly reply this email via Whatsapp for effective communication +6287722748143
 
-Thank you
+Thank you,
 Karma
 
 CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
@@ -1613,21 +1536,21 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
-  
-We apologize for the slight adjustment in the pick-up time due to the scheduled departure time from Sanur Port is at 7:30 AM so that we can arrive in Nusa Penida earlier and cover all the destinations as planned. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
-  
+
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
+
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. As part of your itinerary, you will be visiting Diamond Beach, Atuh Beach, and Kelingking Beach, which involve full trekking. Please be prepared for a physically demanding experience, as you will be descending and ascending over 100 meters with slopes ranging from 30 to 45 degrees. It is essential to wear good-quality trekking shoes and be in optimal physical condition.
-  
+
 Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
+
 If you would like to spend extra time swimming at a beach you will be visiting tomorrow, please discuss this with the driver to adjust the schedule before reaching Nusa Penida Port. If time allows, the driver will be happy to accommodate your request. Please bring your swimsuit and towel, as showers and changing rooms are available at an additional cost.
-  
+
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
+
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
-  
+
 Thank you
 Karma
         `.trim();
