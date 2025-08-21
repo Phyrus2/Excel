@@ -197,6 +197,10 @@ export class TampilanComponent implements OnInit {
       const additionalInfo = row.AdditionalInfo || '';
       const polaroidMatch = additionalInfo.match(/Polaroid.*?\)/); // Ambil teks "Polaroid" sampai tanda tutup kurung
       const polaroidData = polaroidMatch ? polaroidMatch[0] : null;
+
+      const extraNamesNote = pax > 1 
+    ? `\n\nIf you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.` 
+    : '';
       
     if (isCategoryE) {
       
@@ -213,7 +217,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
-* Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
+* Pickup & Drop Off ${row.Location} - Sanur Matahari Terbit Port
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
 * Nusa Penida entrance (retribution) fee 
 * Full transportation service in Nusa Penida
@@ -241,7 +245,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -271,7 +275,7 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
+* Pickup & Drop Off ${row.Location} - Sanur Matahari Terbit Port
 * Meals
 * Personal expenses
 * Tips/gratuities
@@ -286,7 +290,7 @@ Nusa Penida is a relatively new destination that is not fully developed yet, giv
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -311,7 +315,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
-* Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
+* Pickup & Drop Off ${row.Location} - Sanur Matahari Terbit Port
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
 * Nusa Penida entrance (retribution) fee 
 * Full transportation service in Nusa Penida
@@ -342,7 +346,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:30 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -377,7 +381,7 @@ Additionally, please bring some extra cash for restroom usage, showers, and lunc
 
 For your return journey, the boat is scheduled to depart from Nusa Penida at 4:00 PM/ 4:30 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -411,7 +415,7 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -444,7 +448,7 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -475,7 +479,7 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -507,7 +511,7 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -543,7 +547,7 @@ Enjoy some leisure time at the beautiful Diamond and Atuh Beach! Relax on the sa
 
 Additionally, please bring some extra cash for restroom usage, shower and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you
 Karma
@@ -577,7 +581,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -609,7 +613,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -644,7 +648,7 @@ If you would like to spend extra time swimming at a beach you will be visiting t
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -677,7 +681,7 @@ If you would like to spend extra time swimming at a beach you will be visiting t
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you
 Karma
@@ -714,7 +718,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -759,7 +763,7 @@ Greetings from TripGotik, a KKDAY partner. We are excited to inform you that you
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
-* Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
+* Pickup & Drop Off ${row.Location} - Sanur Matahari Terbit Port
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
 * Nusa Penida entrance (retribution) fee 
 * Full transportation service in Nusa Penida
@@ -787,7 +791,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
@@ -835,7 +839,7 @@ EXCLUDED:
 
 We understand that this may not have been fully clear during the booking process, and we sincerely apologize for any confusion or inconvenience caused. Our team is committed to ensuring your visit to Nusa Penida is seamless and memorable.
 
-Should you have any questions or need further assistance, please feel free to contact us at any time.
+Should you have any questions or need further assistance, please feel free to contact us at any time.${extraNamesNote}
 
 Thank you once again for choosing Trip Gotik. We look forward to welcoming you soon.
 
@@ -877,7 +881,7 @@ EXCLUDED:
 * Personal expenses
 * Tips/gratuities
 
-Should you have any questions or need further assistance, please feel free to contact us at any time.
+Should you have any questions or need further assistance, please feel free to contact us at any time.${extraNamesNote}
 
 Thank you once again for choosing Trip Gotik. We look forward to welcoming you soon.
 
@@ -1050,6 +1054,10 @@ Karma
       const additionalInfo = row.AdditionalInfo || '';
       const polaroidMatch = additionalInfo.match(/Polaroid.*?\)/); // Ambil teks "Polaroid" sampai tanda tutup kurung
       const polaroidData = polaroidMatch ? polaroidMatch[0] : null;
+
+      const extraNamesNote = pax > 1 
+    ? `\n\nIf you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.` 
+    : '';
   
       if (isCategoryE) {
       
@@ -1066,7 +1074,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
-* Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
+* Pickup & Drop Off ${row.Location} - Sanur Matahari Terbit Port
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
 * Nusa Penida entrance (retribution) fee
 * Full transportation service in Nusa Penida
@@ -1094,7 +1102,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬
+If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬${extraNamesNote}
 
 Thank you,
 Karma
@@ -1126,7 +1134,7 @@ INCLUDED:
 * Parking fees
 
 EXCLUDED:
-* Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
+* Pickup & Drop Off ${row.Location} - Sanur Matahari Terbit Port
 * Meals
 * Personal expenses
 * Tips/gratuities
@@ -1141,7 +1149,7 @@ Nusa Penida is a relatively new destination that is not fully developed yet, giv
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬
+If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬${extraNamesNote}
 
 Thank you,
 Karma
@@ -1165,7 +1173,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
-* Pickup & Drop Off Bali addressed Hotel- Sanur Matahari Terbit Port
+* Pickup & Drop Off ${row.Location} - Sanur Matahari Terbit Port
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
 * Nusa Penida entrance (retribution) fee
 * Full transportation service in Nusa Penida
@@ -1196,7 +1204,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:30 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬
+If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬${extraNamesNote}
 
 Thank you,
 Karma
@@ -1231,7 +1239,7 @@ Additionally, please bring some extra cash for restroom usage, showers, and lunc
 
 For your return journey, the boat is scheduled to depart from Nusa Penida at 4:00 PM/ 4:30 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1267,7 +1275,7 @@ Karma
   
   Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
   
-  If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+  If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
   Kindly reply this email via Whatsapp for effective communication +6287722748143 
   
@@ -1302,7 +1310,7 @@ Karma
   
   Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
   
-  If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+  If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
   Kindly reply this email via Whatsapp for effective communication +6287722748143 
   
@@ -1335,7 +1343,7 @@ Karma
   
   Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
   
-  If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+  If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
   Kindly reply this email via Whatsapp for effective communication +6287722748143 
   
@@ -1369,7 +1377,7 @@ Karma
   
   Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
   
-  If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+  If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
   Kindly reply this email via Whatsapp for effective communication +6287722748143 
   
@@ -1405,7 +1413,7 @@ Enjoy some leisure time at the beautiful Diamond and Atuh Beach! Relax on the sa
   
 Additionally, please bring some extra cash for restroom usage, shower and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
   
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
   
@@ -1441,7 +1449,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
   
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
   
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
   
@@ -1475,7 +1483,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
   
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
   
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
   
@@ -1513,7 +1521,7 @@ If you would like to spend extra time swimming at a beach you will be visiting t
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
 
@@ -1547,7 +1555,7 @@ If you would like to spend extra time swimming at a beach you will be visiting t
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
 
@@ -1586,7 +1594,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
 
@@ -1635,7 +1643,7 @@ Greetings from TripGotik, a KKDAY partner. We are excited to inform you that you
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
-* Pickup & Drop Off Bali addressed Hotel-Sanur Matahari Terbit Port
+* Pickup & Drop Off ${row.Location} - Sanur Matahari Terbit Port
 * Round Trip Fast Boat Ticket Bali- Nusa Penida
 * Nusa Penida entrance (retribution) fee
 * Full transportation service in Nusa Penida
@@ -1663,7 +1671,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬
+If you have any questions or need further assistance regarding this booking, please feel free to contact us here or via Whatsapp for effective communication ‪+6287722748143‬${extraNamesNote}
 
 Thank you,
 Karma
@@ -1711,7 +1719,7 @@ EXCLUDED:
 
 We understand that this may not have been fully clear during the booking process, and we sincerely apologize for any confusion or inconvenience caused. Our team is committed to ensuring your visit to Nusa Penida is seamless and memorable.
 
-Should you have any questions or need further assistance, please feel free to contact us at any time.
+Should you have any questions or need further assistance, please feel free to contact us at any time.${extraNamesNote}
 
 Thank you once again for choosing Trip Gotik. We look forward to welcoming you soon.
 
@@ -1753,7 +1761,7 @@ EXCLUDED:
 * Personal expenses
 * Tips/gratuities
 
-Should you have any questions or need further assistance, please feel free to contact us at any time.
+Should you have any questions or need further assistance, please feel free to contact us at any time.${extraNamesNote}
 
 Thank you once again for choosing Trip Gotik. We look forward to welcoming you soon.
 
