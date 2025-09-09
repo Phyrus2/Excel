@@ -265,7 +265,7 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 
 Additionally, please bring some extra cash for restroom usage, showers, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-For your return journey, the boat is scheduled to depart from Nusa Penida at 4:00 PM/ 4:30 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
+For your return journey, the boat is scheduled to depart from Nusa Penida at 5:00 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.${J}
 
@@ -963,7 +963,7 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 
 Additionally, please bring some extra cash for restroom usage, showers, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-For your return journey, the boat is scheduled to depart from Nusa Penida at 4:00 PM/ 4:30 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
+For your return journey, the boat is scheduled to depart from Nusa Penida at 5:00 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.${M}
 
