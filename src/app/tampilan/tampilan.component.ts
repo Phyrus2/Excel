@@ -211,7 +211,7 @@ export class TampilanComponent implements OnInit {
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -253,7 +253,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -265,7 +265,7 @@ Karma
         message = `
 ${row.Group},
           
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
           
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
@@ -306,7 +306,7 @@ Additionally, please bring some extra cash for restroom usage, shower facilities
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -322,7 +322,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -367,7 +367,7 @@ Upon your return to Sanur Harbor around 5:30 PM, please make your way back to th
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -380,7 +380,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -422,7 +422,7 @@ For your return journey, the boat is scheduled to depart from Nusa Penida at 5:0
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -435,7 +435,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -476,7 +476,7 @@ Additionally, please bring some extra cash for restroom usage, shower facilities
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -494,7 +494,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -524,7 +524,7 @@ Karma
       message = `
 ${row.Group},
 
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -556,7 +556,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -590,7 +590,7 @@ Karma
    message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -630,7 +630,7 @@ Additionally, please bring some extra cash for restroom usage, shower facilities
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you
 Karma
@@ -644,7 +644,7 @@ if (
        message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -678,7 +678,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
        message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -688,7 +688,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at ‪+62 811-3993-366‬.  Here's the location link for your convenience: https://maps.app.goo.gl/z374AsynJgWA33eLA?g_st=iwb
 
-To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.
+To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.${extraNamesNote}
 
 Thank you,
 Karma
@@ -702,7 +702,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from TripGotik, a KKDAY partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -746,7 +746,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -759,7 +759,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -801,7 +801,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -814,7 +814,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -859,7 +859,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -872,7 +872,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -914,7 +914,7 @@ For your return journey, the boat is scheduled to depart from Nusa Penida at 5:0
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Thank you,
 Karma
@@ -927,7 +927,7 @@ else if (isCategoryENP) {
       message = `
 ${row.Group},
 
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
 
@@ -974,7 +974,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
 
@@ -1021,7 +1021,7 @@ else if (isCategoryCH) {
       message = `
 ${row.Group},
 
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
 We hope this message finds you well.
@@ -1057,7 +1057,7 @@ EXCLUDED:
 * Tips/gratuities
 
 Should you have any questions or special requests, please feel free to reach out at any time.
-We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!
+We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!${extraNamesNote}
 
 Warm regards,
 Karma
@@ -1069,7 +1069,7 @@ Karma
 ${row.Group},
 
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
 We hope this message finds you well.
@@ -1106,7 +1106,7 @@ EXCLUDED:
 * Tips/gratuities
 
 Should you have any questions or special requests, please feel free to reach out at any time.
-We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!
+We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!${extraNamesNote}
 
 Warm regards,
 Karma
@@ -1191,7 +1191,7 @@ Karma
         message = `
 ${row.Group},
     
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1233,7 +1233,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1249,7 +1249,7 @@ Karma
           message = `
 ${row.Group},
             
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
           
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
@@ -1290,7 +1290,7 @@ Additionally, please bring some extra cash for restroom usage, shower facilities
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1307,7 +1307,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
         message = `
 ${row.Group},
     
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1352,7 +1352,7 @@ Upon your return to Sanur Harbor around 5:30 PM, please make your way back to th
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1367,7 +1367,7 @@ Karma
         message = `
 ${row.Group},
     
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1409,7 +1409,7 @@ For your return journey, the boat is scheduled to depart from Nusa Penida at 5:0
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1424,7 +1424,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1465,7 +1465,7 @@ Additionally, please bring some extra cash for restroom usage, shower facilities
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1482,7 +1482,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
         message = `
 ${row.Group},
     
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
     
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
@@ -1514,7 +1514,7 @@ Karma
         message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
     
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
@@ -1548,7 +1548,7 @@ Karma
         message = `
   ${row.Group},
     
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
     
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
@@ -1584,7 +1584,7 @@ Karma
         message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1624,7 +1624,7 @@ Additionally, please bring some extra cash for restroom usage, shower facilities
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1640,7 +1640,7 @@ if (
        message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1676,7 +1676,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
        message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1686,7 +1686,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at ‪+62 811-3993-366‬.  Here's the location link for your convenience: https://maps.app.goo.gl/z374AsynJgWA33eLA?g_st=iwb
 
-To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.
+To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
 
@@ -1702,7 +1702,7 @@ Karma
         message = `
 ${row.Group},
     
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from TripGotik, a KKDAY partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1746,7 +1746,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1761,7 +1761,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1803,7 +1803,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1818,7 +1818,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1863,7 +1863,7 @@ Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143 
 
@@ -1878,7 +1878,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
@@ -1920,7 +1920,7 @@ For your return journey, the boat is scheduled to depart from Nusa Penida at 5:0
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.
 
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
 
@@ -1935,7 +1935,7 @@ else if (isCategoryENP) {
       message = `
 ${row.Group},
 
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
 
@@ -1982,7 +1982,7 @@ Karma
       message = `
 ${row.Group},
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
 
@@ -2029,7 +2029,7 @@ else if (isCategoryCH) {
       message = `
 ${row.Group},
 
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
 We hope this message finds you well.
@@ -2065,7 +2065,7 @@ EXCLUDED:
 * Tips/gratuities
 
 Should you have any questions or special requests, please feel free to reach out at any time.
-We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!
+We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!${extraNamesNote}
 
 Warm regards,
 Karma
@@ -2077,7 +2077,7 @@ Karma
 ${row.Group},
 
   
-Dear Mr./Mrs ${namaTamu}
+Dear Mr/Mrs. ${namaTamu}
   
 Warm greetings from Trip Gotik, your trusted local partner on GetYourGuide.
 We hope this message finds you well.
@@ -2114,7 +2114,7 @@ EXCLUDED:
 * Tips/gratuities
 
 Should you have any questions or special requests, please feel free to reach out at any time.
-We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!
+We sincerely thank you for choosing Trip Gotik and look forward to welcoming you to Nusa Penida soon!${extraNamesNote}
 
 Warm regards,
 Karma
