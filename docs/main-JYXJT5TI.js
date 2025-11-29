@@ -149,9 +149,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank\xA0you,
 Karma
@@ -198,9 +196,7 @@ Nusa Penida is a relatively new destination that is not fully developed yet, giv
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank you,
 Karma
@@ -253,9 +249,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:30 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank\xA0you,
 Karma
@@ -303,9 +297,7 @@ Additionally, please bring some extra cash for restroom usage, showers, and lunc
 
 For your return journey, the boat is scheduled to depart from Nusa Penida at 5:00 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank\xA0you,
 Karma
@@ -352,9 +344,7 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank you,
 Karma
@@ -488,9 +478,7 @@ If you would like to spend extra time swimming at a beach you will be visiting t
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank\xA0you
 Karma
@@ -590,9 +578,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank\xA0you,
 Karma
@@ -640,9 +626,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank\xA0you,
 Karma
@@ -693,9 +677,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank\xA0you,
 Karma
@@ -743,9 +725,7 @@ Additionally, please bring some extra cash for restroom usage, showers, and lunc
 
 For your return journey, the boat is scheduled to depart from Nusa Penida at 5:00 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${ce}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${ce}
 
 Thank\xA0you,
 Karma
@@ -970,9 +950,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1021,9 +999,7 @@ Nusa Penida is a relatively new destination that is not fully developed yet, giv
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1078,9 +1054,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:30 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1130,9 +1104,7 @@ Additionally, please bring some extra cash for restroom usage, showers, and lunc
 
 For your return journey, the boat is scheduled to depart from Nusa Penida at 5:00 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1181,9 +1153,7 @@ Enjoy some leisure time at the beautiful Crystal Bay Beach! Relax on the sand an
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1325,9 +1295,7 @@ If you would like to spend extra time swimming at a beach you will be visiting t
 
 Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1433,9 +1401,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1485,9 +1451,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1540,9 +1504,7 @@ Additionally, please bring some extra cash for restroom usage and lunch. The loc
 
 Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143 
 
@@ -1592,9 +1554,7 @@ Additionally, please bring some extra cash for restroom usage, showers, and lunc
 
 For your return journey, the boat is scheduled to depart from Nusa Penida at 5:00 PM, and you will arrive back in Bali around 1 hour after. Upon your return to Sanur Harbor, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.
-
-If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.${K}
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.${K}
 
 Kindly reply this email via Whatsapp for effective communication\xA0+6287722748143
 
