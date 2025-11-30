@@ -110,7 +110,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -128,7 +130,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${R}
+${n.PickupTime} AM - ${R} AM
 
 EXCLUDED:
 * Meals
@@ -158,7 +160,9 @@ ${n.Group},
           
 Dear Mr/Mrs. ${B}
           
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -207,7 +211,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -226,7 +232,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${R}
+${n.PickupTime} AM - ${R} AM
 
 EXCLUDED:
 * Meals
@@ -258,7 +264,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -276,7 +284,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${R}
+${n.PickupTime} AM - ${R} AM
 
 EXCLUDED:
 * Meals
@@ -306,7 +314,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -355,7 +365,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -381,7 +393,9 @@ ${n.Group},
 
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -411,7 +425,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -441,7 +457,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -459,7 +477,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${R}
+${n.PickupTime} AM - ${R} AM
 
 EXCLUDED:
 * Meals
@@ -487,8 +505,10 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-  
+Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+
 * Booking Code  : ${P}
 * Activity Date : ${j}
 * Total Person  : ${M} ${_}
@@ -519,7 +539,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -537,7 +559,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from TripGotik, a KKDAY partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from TripGotik, a KKDAY partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -555,7 +579,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${R}
+${n.PickupTime} AM - ${R} AM
 
 EXCLUDED:
 * Meals
@@ -587,7 +611,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -605,7 +631,7 @@ NCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${R}
+${n.PickupTime} AM - ${R} AM
 
 EXCLUDED:
 * Meals
@@ -635,7 +661,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -654,7 +682,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${R}
+${n.PickupTime} AM - ${R} AM
 
 EXCLUDED:
 * Meals
@@ -686,7 +714,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${B}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${P}
 * Activity Date : ${j}
@@ -704,7 +734,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${R}
+${n.PickupTime} AM - ${R} AM
 
 EXCLUDED:
 * Meals
@@ -911,7 +941,9 @@ ${n.Group},
     
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -929,7 +961,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${V}
+${n.PickupTime} AM - ${V} AM
 
 EXCLUDED:
 * Meals
@@ -961,7 +993,9 @@ ${n.Group},
             
 Dear Mr/Mrs. ${_}
           
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1012,7 +1046,9 @@ ${n.Group},
     
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1031,7 +1067,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${V}
+${n.PickupTime} AM - ${V} AM
 
 EXCLUDED:
 * Meals
@@ -1065,7 +1101,9 @@ ${n.Group},
     
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1083,7 +1121,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${V}
+${n.PickupTime} AM - ${V} AM
 
 EXCLUDED:
 * Meals
@@ -1115,7 +1153,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1166,7 +1206,9 @@ ${n.Group},
     
 Dear Mr/Mrs. ${_}
     
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1194,7 +1236,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${_}
     
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1226,7 +1270,9 @@ Karma
     
 Dear Mr/Mrs. ${_}
     
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1258,7 +1304,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1276,7 +1324,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${V}
+${n.PickupTime} AM - ${V} AM
 
 EXCLUDED:
 * Meals
@@ -1306,7 +1354,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1340,7 +1390,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1360,7 +1412,9 @@ ${n.Group},
     
 Dear Mr/Mrs. ${_}
   
-Greetings from TripGotik, a KKDAY partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from TripGotik, a KKDAY partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1378,7 +1432,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${V}
+${n.PickupTime} AM - ${V} AM
 
 EXCLUDED:
 * Meals
@@ -1412,7 +1466,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1430,7 +1486,7 @@ NCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${V}
+${n.PickupTime} AM - ${V} AM
 
 EXCLUDED:
 * Meals
@@ -1462,7 +1518,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1481,7 +1539,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${V}
+${n.PickupTime} AM - ${V} AM
 
 EXCLUDED:
 * Meals
@@ -1515,7 +1573,9 @@ ${n.Group},
   
 Dear Mr/Mrs. ${_}
   
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
 * Booking Code  : ${E}
 * Activity Date : ${P}
@@ -1533,7 +1593,7 @@ INCLUDED:
 * Parking fees
 
 Pick up Time:
-${n.PickupTime} - ${V}
+${n.PickupTime} AM - ${V} AM
 
 EXCLUDED:
 * Meals
