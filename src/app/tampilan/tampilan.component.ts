@@ -241,7 +241,9 @@ EXCLUDED:
 
 The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
 
-For tomorrow we are scheduled to depart at 7.00 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+For tomorrow we are scheduled to depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. 
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
 Kindly note that this tour involves moderate walking and the use of stairs, particularly at Diamond Beach and Kelingking Beach. While it is not mandatory to trek all the way down, guests are welcome to explore further, and our guide will be happy to accompany you as long as you feel comfortable.
 
@@ -353,7 +355,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 7.00 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.  Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards. 
 
@@ -410,7 +412,9 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are schedule to depart from Sanur Port at 8:30 AM . Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM, with last-minute check-in at 8:15 AM. Kindly be prepared within the assigned pickup time.
+
+Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
@@ -799,7 +803,9 @@ EXCLUDED:
 
 The driver will assist you with the check in process in Bali harbor. 
 
-For tomorrow we are scheduled to depart at 7.00 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged privately by our team from this point onwards.
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged privately by our team from this point onwards.
 
 Kindly note that this tour involves moderate walking and the use of stairs, particularly at Diamond Beach and Kelingking Beach. While it is not mandatory to trek all the way down, guests are welcome to explore further, and our guide will be happy to accompany you as long as you feel comfortable.
 
@@ -855,7 +861,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are scheduled depart at 7.00 AM from Sanur port, in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged privately by our team from this point onwards. 
 
@@ -867,7 +873,7 @@ Nusa Penida is a relatively new destination that is not fully developed yet, giv
 
 Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.    
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
@@ -912,7 +918,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are schedule to depart from Sanur Port at 8:30 AM . In case of any delays when picking you up, and you will still be picked up as scheduled.
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM, with last-minute check-in at 8:15 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged  privately by our team from this point onwards.
 
@@ -1231,7 +1237,9 @@ EXCLUDED:
 
 The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
 
-For tomorrow we are scheduled to depart at 7.00 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+For tomorrow we are scheduled to depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. 
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
 Kindly note that this tour involves moderate walking and the use of stairs, particularly at Diamond Beach and Kelingking Beach. While it is not mandatory to trek all the way down, guests are welcome to explore further, and our guide will be happy to accompany you as long as you feel comfortable.
 
@@ -1348,7 +1356,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-Sorry for this inconvenience that we have to pick you up slightly earlier than usual, cause of pickup distance from the harbor and for tomorrow we are scheduled depart at 7.00 AM from Sanur port, so that we can arrive in Nusa Penida earlier and cover all the destinations as planned specially for taking photo at tree house. Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.  Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards. 
 
@@ -1407,7 +1415,9 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are schedule to depart from Sanur Port at 8:30 AM . Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM, with last-minute check-in at 8:15 AM. Kindly be prepared within the assigned pickup time.
+
+Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
@@ -1811,7 +1821,9 @@ EXCLUDED:
 
 The driver will assist you with the check in process in Bali harbor. 
 
-For tomorrow we are scheduled to depart at 7.00 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged privately by our team from this point onwards.
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged privately by our team from this point onwards.
 
 Kindly note that this tour involves moderate walking and the use of stairs, particularly at Diamond Beach and Kelingking Beach. While it is not mandatory to trek all the way down, guests are welcome to explore further, and our guide will be happy to accompany you as long as you feel comfortable.
 
@@ -1869,7 +1881,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are scheduled depart at 7.00 AM from Sanur port, in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged privately by our team from this point onwards. 
 
@@ -1881,7 +1893,7 @@ Nusa Penida is a relatively new destination that is not fully developed yet, giv
 
 Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.   
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
@@ -1928,7 +1940,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are schedule to depart from Sanur Port at 8:30 AM . In case of any delays when picking you up, and you will still be picked up as scheduled.
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM, with last-minute check-in at 8:15 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged  privately by our team from this point onwards.
 
