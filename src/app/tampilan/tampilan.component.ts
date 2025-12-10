@@ -179,6 +179,7 @@ export class TampilanComponent implements OnInit {
     const isCategoryPW = group.startsWith('PW.');
     const isCategoryENP = group.startsWith('ENP.');
     const isCategoryCH = group.startsWith('CH.');
+    const isCategoryIBS = group.startsWith('IBS.');
     let message = '';
     const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
       const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
@@ -288,6 +289,9 @@ INCLUDED:
 
 Meeting time:
 6.30 Am
+
+Last minute check in time :
+6.45 Am
 
 Boat Departure Time:
 7.00 Am
@@ -630,7 +634,9 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are schedule to depart from Sanur Port at 8:30 AM. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM, with last-minute check-in at 8:15 AM. Kindly be prepared within the assigned pickup time.
+
+Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. As part of your itinerary, you will be visiting Diamond Beach, Atuh Beach, and Kelingking Beach, which involve full trekking. Please be prepared for a physically demanding experience, as you will be descending and ascending over 100 meters with slopes ranging from 30 to 45 degrees. It is essential to wear good-quality trekking shoes and be in optimal physical condition.
 
@@ -1132,6 +1138,70 @@ Karma
   }
 
 
+   else if (isCategoryEMP) {
+   
+        message = `
+${row.Group},
+          
+Dear Mr/Mrs. ${namaTamu}
+          
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+          
+* Booking Code  : ${bookingCode}
+* Activity Date : ${activityDate}
+* Total Person  : ${pax} ${paxLabel}
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+INCLUDED:
+* Round Trip Fast Boat Ticket Bali- Nusa Penida
+* Nusa Penida entrance (retribution) fee 
+* Full transportation service in Nusa Penida
+* 1 bottle of mineral water per person
+* English-speaking guide driver
+* Entrance fees to: Diamond Beach, Atuh Beach, Kelingking Beach
+* Parking fees
+
+Meeting time:
+8.00 Am
+
+Last minute check in time :
+8.15 Am
+
+Boat Departure Time:
+8.30 Am
+
+EXCLUDED:
+* Pickup & Drop Off From your hotel - Sanur Matahari Terbit Port
+* Meals
+* Personal expenses
+* Tips/gratuities
+
+Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+
+During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. As part of your itinerary, you will be visiting Diamond Beach, Atuh Beach, and Kelingking Beach, which involve full trekking. Please be prepared for a physically demanding experience, as you will be descending and ascending over 100 meters with slopes ranging from 30 to 45 degrees. It is essential to wear good-quality trekking shoes and be in optimal physical condition.
+
+Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+If you would like to spend extra time swimming at a beach you will be visiting tomorrow, please discuss this with the driver to adjust the schedule before reaching Nusa Penida Port. If time allows, the driver will be happy to accommodate your request. Please bring your swimsuit and towel, as showers and changing rooms are available at an additional cost.
+
+Additionally, please bring some extra cash for restroom usage, shower facilities, and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
+
+If you have any questions or need further assistance regarding this booking, please feel free to contact us.
+
+If you haven't submitted the full names of all participants yet, kindly send them to us at your earliest convenience so we can complete the ticketing process for tomorrow's tour.
+
+Thank you,
+Karma
+
+CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
+      `.trim();
+      
+  }
+
+
     else {
       message = `Halo ${row.NamaTamu}, saya ingin menghubungi Anda melalui informasi dari file Excel.`.trim();
     }
@@ -1175,6 +1245,7 @@ Karma
     const isCategoryPW = group.startsWith('PW.');
     const isCategoryENP = group.startsWith('ENP.');
     const isCategoryCH = group.startsWith('CH.');
+    const isCategoryIBS = group.startsWith('IBS.');
     let message = '';
     const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
       const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
@@ -1288,6 +1359,9 @@ INCLUDED:
 
 Meeting time:
 6.30 Am
+
+Last minute check in time :
+6.45 Am
 
 Boat Departure Time:
 7.00 Am
@@ -1466,6 +1540,9 @@ INCLUDED:
 Meeting time:
 8.00 Am
 
+Last minute check in time :
+8.15 Am
+
 Boat Departure Time:
 8.30 Am
 
@@ -1640,7 +1717,9 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are schedule to depart from Sanur Port at 8:30 AM. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
+For tomorrow we are schedule to depart from Sanur Port at 8:30 AM, with last-minute check-in at 8:15 AM. Kindly be prepared within the assigned pickup time.
+
+Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, apply sunscreen, and bring sunglasses. As part of your itinerary, you will be visiting Diamond Beach, Atuh Beach, and Kelingking Beach, which involve full trekking. Please be prepared for a physically demanding experience, as you will be descending and ascending over 100 meters with slopes ranging from 30 to 45 degrees. It is essential to wear good-quality trekking shoes and be in optimal physical condition.
 
