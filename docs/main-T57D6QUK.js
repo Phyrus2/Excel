@@ -246,7 +246,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.  Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.  Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. 
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards. 
 
@@ -708,7 +708,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.  Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when\xA0picking\xA0you\xA0up.
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged privately by our team from this point onwards. 
 
@@ -1154,7 +1154,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.  Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled. 
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.  Please be informed, this is a group tour and on rare occasions, some participants may not be punctual.
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards. 
 
@@ -1635,7 +1635,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.  Please be informed, this is a group tour and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when\xA0picking\xA0you\xA0up.
+For tomorrow we are scheduled depart at 7.00 AM from Sanur port, with last-minute check-in at 6:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled.
 
 When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged privately by our team from this point onwards. 
 
