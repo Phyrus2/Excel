@@ -180,6 +180,7 @@ export class TampilanComponent implements OnInit {
     const isCategoryENP = group.startsWith('ENP.');
     const isCategoryCH = group.startsWith('CH.');
     const isCategoryIBS = group.startsWith('IBS.');
+    const isCategorySNP = group.startsWith('SNP.');
     let message = '';
     const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
       const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
@@ -531,77 +532,66 @@ Thank you
 Karma
       `.trim();
     }
-    else if (isCategorySW) {
-      
-      if (row.AdditionalInfo && (row.AdditionalInfo.includes("Private Tour") || row.AdditionalInfo.includes("PRIVATE TOUR"))) {
-      message = `
-${row.Group},
 
-Dear Mr/Mrs. ${namaTamu}
+      else if (isCategorySW) {
+      
+        
+        message = `
+${row.Group},
   
+Dear Mr/Mrs. ${namaTamu}
+    
 Greetings from Trip Gotik Get Your Guide Local Partner. 
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-  
+    
 * Booking Code  : ${bookingCode}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be at ${row.PickupTime} AM from ${row.Location}. 
+INCLUDED:
 
-The driver will assist you with the check in process in Bali harbor. For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+- Pickup & Drop Off From Wooden Ganeca Villas by Pramana Villas, Jalan Cinta, Gianyar
+- Round Trip Fast Boat Ticket Bali- Nusa Penida
+- Nusa Penida entrance (retribution) fee
+- Full transportation service in Nusa Penida
+- 1 bottle of mineral water per person
+- English-speaking guide driver
+- Entrance fees to: Broken Beach, Angel Billabong, Kelingking Beach
+- Snorkeling Equipment: (underwater camera Go Pro (shared by link), snorkel gear, fins and life jacket)
+- Parking fees
+
+Pick up Time:
+${row.PickupTime} - ${pickupTimeUpdated} AM
+
+EXCLUDED:
+
+- Meals
+- Personal expenses
+- Tips/gratuities
+
+Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
+
+For tomorrow we are scheduled depart at 8.00 AM from Sanur port, with last-minute check-in at 7:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
 
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, water-friendly footwear or comfortable sandals, apply sunscreen, and bring sunglasses.
 
-Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach. 
+Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach.
 
 Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
 
 Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
 
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
 
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Thank you,
 Karma
-      `.trim();
-    }
-    else{
-      message = `
-${row.Group},
-  
-Dear Mr/Mrs. ${namaTamu}
-  
-Greetings from Trip Gotik Get Your Guide Local Partner. 
-
-We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-  
-* Booking Code  : ${bookingCode}
-* Activity Date : ${activityDate}
-* Total Person  : ${pax} ${paxLabel}
-${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
-
-For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses. 
-
-Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach. 
-
-Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-
-Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
-
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
-
-Thank you,
-Karma
-      `.trim();
-    }
-  }
+        `.trim();
+      }
   else if (isCategoryNI) {
         
    message = `
@@ -657,45 +647,7 @@ Karma
     }
     else if (isCategorySMP) {
       
-if (
-      (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") 
-    ) {
-       message = `
-${row.Group},
-  
-Dear Mr/Mrs. ${namaTamu}
-  
-Greetings from Trip Gotik Get Your Guide Local Partner. We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:Greetings from Trip Gotik Get Your Guide Local Partner. 
 
-We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-
-* Booking Code  : ${bookingCode}
-* Activity Date : ${activityDate}
-* Total Person  : ${pax} ${paxLabel}
-${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that you must arrive at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. please proceed to the THE ANGKAL FAST BOAT office, which is located directly next to CK Mart (address provided in the link below), . Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
-
-When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.
-
-Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach.
-
-Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-
-Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
-
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
-
-Thank you,
-Karma
-
-CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
-      `.trim();
-    }
-    else {
        message = `
 ${row.Group},
   
@@ -709,16 +661,50 @@ We are excited to inform you that your booking for the Nusa Penida Trip with the
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at ‪+62 811-3993-366‬.  Here's the location link for your convenience: https://maps.app.goo.gl/z374AsynJgWA33eLA?g_st=iwb
+INCLUDED:
 
-To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.${extraNamesNote}
+- Round Trip Fast Boat Ticket Bali- Nusa Penida
+- Nusa Penida entrance (retribution) fee
+- Full transportation service in Nusa Penida
+- 1 bottle of mineral water per person
+- English-speaking guide driver
+- Entrance fees to: Broken Beach, Angel Billabong, Kelingking Beach
+- Snorkeling Equipment: (underwater camera Go Pro (shared by link), snorkel gear, fins and life jacket)
+- Parking fees
 
-Thank you,
+Meeting time:
+7.00 Am
+
+Last minute check in time :
+7.45 Am
+
+Boat Departure Time:
+8.00 Am
+
+EXCLUDED:
+
+- Meals
+- Personal expenses
+- Tips/gratuities
+
+Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+
+During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, water-friendly footwear or comfortable sandals, apply sunscreen, and bring sunglasses.
+
+Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach.
+
+Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
+
+Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.${extraNamesNote}
+
+Thank you,
 Karma
       `.trim();
     }
-    }  
-     
+    
+    
     else if (isCategoryPE) {
       
   
@@ -1205,6 +1191,39 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
       
   }
 
+     else if (isCategorySNP) {
+   
+        message = `
+${row.Group},
+          
+Dear Mr/Mrs. ${namaTamu}
+          
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+          
+* Booking Code  : ${bookingCode}
+* Activity Date : ${activityDate}
+* Total Person  : ${pax} ${paxLabel}
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+INCLUDED:
+- Snorkeling Equipment: (underwater camera Go Pro (shared by link), snorkel gear, fins and life jacket)
+
+EXCLUDED:
+- Meals
+- Personal expenses
+- Tips/gratuities
+
+Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at ‪+62 811-3993-366‬.  Here's the location link for your convenience: https://maps.app.goo.gl/eToUc6pH3qZmoDUa8
+
+To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.${extraNamesNote}
+
+Thank you,
+Karma
+      `.trim();
+      
+  }
+
 
     else {
       message = `Halo ${row.NamaTamu}, saya ingin menghubungi Anda melalui informasi dari file Excel.`.trim();
@@ -1250,6 +1269,7 @@ CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16
     const isCategoryENP = group.startsWith('ENP.');
     const isCategoryCH = group.startsWith('CH.');
     const isCategoryIBS = group.startsWith('IBS.');
+    const isCategorySNP = group.startsWith('SNP.');
     let message = '';
     const bookingCode = row.BookingCode || 'Unknown Booking Code'; // Ambil Booking Code dari data
       const activityDate = this.getNextDayDate(); // Dapatkan tanggal besok
@@ -1613,7 +1633,7 @@ Karma
       }
       else if (isCategorySW) {
       
-        if (row.AdditionalInfo && (row.AdditionalInfo.includes("Private Tour") || row.AdditionalInfo.includes("PRIVATE TOUR"))) {
+        
         message = `
 ${row.Group},
   
@@ -1627,65 +1647,52 @@ We are excited to inform you that your booking for the Nusa Penida Trip with the
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be at ${row.PickupTime} AM from ${row.Location}. 
-  
-The driver will assist you with the check in process in Bali harbor. For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-  
+INCLUDED:
+
+- Pickup & Drop Off From Wooden Ganeca Villas by Pramana Villas, Jalan Cinta, Gianyar
+- Round Trip Fast Boat Ticket Bali- Nusa Penida
+- Nusa Penida entrance (retribution) fee
+- Full transportation service in Nusa Penida
+- 1 bottle of mineral water per person
+- English-speaking guide driver
+- Entrance fees to: Broken Beach, Angel Billabong, Kelingking Beach
+- Snorkeling Equipment: (underwater camera Go Pro (shared by link), snorkel gear, fins and life jacket)
+- Parking fees
+
+Pick up Time:
+${row.PickupTime} - ${pickupTimeUpdated} AM
+
+EXCLUDED:
+
+- Meals
+- Personal expenses
+- Tips/gratuities
+
+Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
+
+For tomorrow we are scheduled depart at 8.00 AM from Sanur port, with last-minute check-in at 7:45 AM. Kindly be prepared within the assigned pickup time. In case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
+
+When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
 To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, water-friendly footwear or comfortable sandals, apply sunscreen, and bring sunglasses.
-  
-Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach. 
-  
+
+Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach.
+
 Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
+
 Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
-  
+
+Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
+
 If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
-  
+
 Thank you,
 Karma
         `.trim();
       }
-      else{
-        message = `
-  ${row.Group},
     
-Dear Mr/Mrs. ${namaTamu}
-    
-Greetings from Trip Gotik Get Your Guide Local Partner. 
-
-We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-    
-* Booking Code  : ${bookingCode}
-* Activity Date : ${activityDate}
-* Total Person  : ${pax} ${paxLabel}
-${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that your pick-up time will be between ${row.PickupTime} - ${pickupTimeUpdated} AM from ${row.Location}. The driver will assist you with the check in process in Bali harbor. Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up. Please don't worry, as you will still be picked up as scheduled
-  
-For tomorrow we are scheduled depart at 07:30 AM from Sanur port. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
-  
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses. 
-  
-Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach. 
-  
-Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
-  
-Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-  
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.  
-  
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
-
-Kindly reply this email via Whatsapp for effective communication +6287722748143
-  
-Thank you,
-Karma
-        `.trim();
-      }
-    }
       else if (isCategoryNI) {
         
         message = `
@@ -1741,11 +1748,9 @@ Thank you
 Karma
       `.trim();
     }
-       else if (isCategorySMP) {
+    else if (isCategorySMP) {
       
-if (
-      (row.Location && row.Location.toLowerCase() === "sanur ferry port meeting point") 
-    ) {
+
        message = `
 ${row.Group},
   
@@ -1759,55 +1764,50 @@ We are excited to inform you that your booking for the Nusa Penida Trip with the
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please note that you must arrive at Sanur Matahari Terbit Harbor at 7:00 AM for the 7:30 AM boat departure. please proceed to the THE ANGKAL FAST BOAT office, which is located directly next to CK Mart (address provided in the link below), . Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+INCLUDED:
 
-When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+- Round Trip Fast Boat Ticket Bali- Nusa Penida
+- Nusa Penida entrance (retribution) fee
+- Full transportation service in Nusa Penida
+- 1 bottle of mineral water per person
+- English-speaking guide driver
+- Entrance fees to: Broken Beach, Angel Billabong, Kelingking Beach
+- Snorkeling Equipment: (underwater camera Go Pro (shared by link), snorkel gear, fins and life jacket)
+- Parking fees
 
-To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, walking shoes, sneakers, apply sunscreen, and bring sunglasses.
+Meeting time:
+7.00 Am
+
+Last minute check in time :
+7.45 Am
+
+Boat Departure Time:
+8.00 Am
+
+EXCLUDED:
+
+- Meals
+- Personal expenses
+- Tips/gratuities
+
+Please note that you must arrive in THE ANGKAL FAST BOAT office, which is located directly next to CK Mart Matahari Terbit. Should you encounter any difficulties with the timing or have trouble locating the office, kindly contact this number for immediate assistance.
+
+During the tour, you will be accompanied by a tour leader. When you arrive in Nusa Penida, please be attentive and look for our team holding a white paper sign with your name on it. Your tour will be arranged by our team from this point onwards.
+
+To ensure your comfort throughout the trip, it is recommended that you wear comfortable clothing, water-friendly footwear or comfortable sandals, apply sunscreen, and bring sunglasses.
 
 Start your journey with snorkeling in 3 spots: Manta Point, Gamat Point and Crystal Bay Point. Finish with snorkel, enjoy the island tour to visit Kelingking Beach, Broken Beach, and Angel Billabong Beach.
 
 Nusa Penida is a relatively new destination that is not fully developed yet, giving you a glimpse of Bali as it was 30 years ago. Approximately 20% of the roads in Nusa Penida are still bumpy, and public facilities are limited. Due to the narrow roads, we may encounter some traffic jams while moving from one spot to another.
 
-Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.
-
-Upon your return to Sanur Harbor around 5:45- 6:00 PM, please make your way back to the ticket pick-up point. Your driver will be waiting there, ready to transport you back to your hotel.
-
-If you have any questions or need further assistance regarding this booking, please feel free to contact us.${extraNamesNote}
+Additionally, please bring some extra cash for restroom usage and lunch. The local restaurants offer a variety of food options, including Indonesian, Western, and Chinese cuisine.${extraNamesNote}
 
 Kindly reply this email via Whatsapp for effective communication +6287722748143
 
-Thank you,
-Karma
-
-CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
-      `.trim();
-    }
-    else {
-       message = `
-${row.Group},
-  
-Dear Mr/Mrs. ${namaTamu}
-  
-Greetings from Trip Gotik Get Your Guide Local Partner. 
-
-We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
-  
-* Booking Code  : ${bookingCode}
-* Activity Date : ${activityDate}
-* Total Person  : ${pax} ${paxLabel}
-${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
-Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at ‪+62 811-3993-366‬.  Here's the location link for your convenience: https://maps.app.goo.gl/z374AsynJgWA33eLA?g_st=iwb
-
-To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.${extraNamesNote}
-
-Kindly reply this email via Whatsapp for effective communication +6287722748143
-
-Thank you,
+Thank you,
 Karma
       `.trim();
-    }
-    }  
+    } 
 
       else if (isCategoryPE) {
       
@@ -2297,6 +2297,41 @@ Thank you,
 Karma
 
 CK Mart Matahari Terbit: https://maps.app.goo.gl/W4Y8V1NBk354mSi16 
+      `.trim();
+      
+  }
+
+       else if (isCategorySNP) {
+   
+        message = `
+${row.Group},
+          
+Dear Mr/Mrs. ${namaTamu}
+          
+Greetings from Trip Gotik Get Your Guide Local Partner. 
+
+We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
+          
+* Booking Code  : ${bookingCode}
+* Activity Date : ${activityDate}
+* Total Person  : ${pax} ${paxLabel}
+${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
+INCLUDED:
+- Snorkeling Equipment: (underwater camera Go Pro (shared by link), snorkel gear, fins and life jacket)
+
+EXCLUDED:
+- Meals
+- Personal expenses
+- Tips/gratuities
+
+Please meet us at the location indicated on the attached map. For easy communication on the day of your tour, you can also contact our host on site via WhatsApp at ‪+62 811-3993-366‬.  Here's the location link for your convenience: https://maps.app.goo.gl/eToUc6pH3qZmoDUa8
+
+To redeem your voucher, simply present your booking code to our staff.  Please arrive 30 minutes prior to your scheduled start timeto allow time for equipment preparation and snorkel shoe fitting.${extraNamesNote}
+
+Kindly reply this email via Whatsapp for effective communication +6287722748143
+
+Thank you,
+Karma
       `.trim();
       
   }
