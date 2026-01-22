@@ -551,7 +551,7 @@ We are excited to inform you that your booking for the Nusa Penida Trip with the
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
 
-- Pickup & Drop Off From Wooden Ganeca Villas by Pramana Villas, Jalan Cinta, Gianyar
+- Pickup & Drop Off From ${row.Location}
 - Round Trip Fast Boat Ticket Bali- Nusa Penida
 - Nusa Penida entrance (retribution) fee
 - Full transportation service in Nusa Penida
@@ -1649,7 +1649,7 @@ We are excited to inform you that your booking for the Nusa Penida Trip with the
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
 INCLUDED:
 
-- Pickup & Drop Off From Wooden Ganeca Villas by Pramana Villas, Jalan Cinta, Gianyar
+- Pickup & Drop Off From ${row.Location}
 - Round Trip Fast Boat Ticket Bali- Nusa Penida
 - Nusa Penida entrance (retribution) fee
 - Full transportation service in Nusa Penida
