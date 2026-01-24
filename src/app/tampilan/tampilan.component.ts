@@ -101,7 +101,7 @@ export class TampilanComponent implements OnInit {
               currentCategory = 'WEST TOUR FROM BALI';
             } else if (groupPrefix.startsWith('E.')|| groupPrefix.startsWith('PE.')|| groupPrefix.startsWith('NE.') || groupPrefix.startsWith('PS.')) {
               currentCategory = 'EAST & WEST TOUR';
-            } else if (groupPrefix.startsWith('SW.')|| groupPrefix.startsWith('SMP.')) {
+            } else if (groupPrefix.startsWith('SW.')|| groupPrefix.startsWith('SMP.') || groupPrefix.startsWith('SNP.')) {
               currentCategory = 'SNORKELING MANTA POINT & WEST COAST TOUR';
             }
             else if (groupPrefix.startsWith('NI.')|| groupPrefix.startsWith('IBS.')) {
