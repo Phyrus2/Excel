@@ -292,7 +292,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are schedule to depart from Sanur Port at 8:30 AM, with last-minute check-in at 8:15 AM. Kindly be prepared within the assigned pickup time.
+For tomorrow we are schedule to depart from Sanur Port at 8:00 AM, with last-minute check-in at 7:45 AM. Kindly be prepared within the assigned pickup time.
 
 Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
@@ -334,13 +334,13 @@ INCLUDED:
 * Parking fees
 
 Meeting time:
-8.00 Am
+7.30 Am
 
 Last minute check in time :
-8.15 Am
+7.45 Am
 
 Boat Departure Time:
-8.30 Am
+8.00 Am
 
 EXCLUDED:
 * Pickup & Drop Off From your hotel - Sanur Matahari Terbit Port
@@ -960,13 +960,13 @@ INCLUDED:
 * Parking fees
 
 Meeting time:
-8.00 Am
+7.30 Am
 
 Last minute check in time :
-8.15 Am
+7.45 Am
 
 Boat Departure Time:
-8.30 Am
+8.00 Am
 
 EXCLUDED:
 * Pickup & Drop Off From your hotel - Sanur Matahari Terbit Port
@@ -1221,7 +1221,7 @@ EXCLUDED:
 
 Upon arrival at your hotel, our driver will contact you. The driver will assist you with the check-in process at Bali harbor.
 
-For tomorrow we are schedule to depart from Sanur Port at 8:30 AM, with last-minute check-in at 8:15 AM. Kindly be prepared within the assigned pickup time.
+For tomorrow we are schedule to depart from Sanur Port at 8:00 AM, with last-minute check-in at 7:45 AM. Kindly be prepared within the assigned pickup time.
 
 Please be informed that this is a group tour, and on rare occasions, some participants may not be punctual. However, rest assured that we will inform you in case of any delays when picking you up, and you will still be picked up as scheduled.
 
@@ -1265,13 +1265,13 @@ INCLUDED:
 * Parking fees
 
 Meeting time:
-8.00 Am
+7.30 Am
 
 Last minute check in time :
-8.15 Am
+7.45 Am
 
 Boat Departure Time:
-8.30 Am
+8.00 Am
 
 EXCLUDED:
 * Pickup & Drop Off From your hotel - Sanur Matahari Terbit Port
@@ -1906,13 +1906,13 @@ INCLUDED:
 * Parking fees
 
 Meeting time:
-8.00 Am
+7.30 Am
 
 Last minute check in time :
-8.15 Am
+7.45 Am
 
 Boat Departure Time:
-8.30 Am
+8.00 Am
 
 EXCLUDED:
 * Pickup & Drop Off From your hotel - Sanur Matahari Terbit Port
