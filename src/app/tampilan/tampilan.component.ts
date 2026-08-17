@@ -219,7 +219,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -275,7 +275,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -335,7 +335,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -393,7 +393,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -450,7 +450,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -512,7 +512,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -545,7 +545,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -619,7 +619,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -673,7 +673,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -751,7 +751,7 @@ Greetings from TripGotik, a KKDAY partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -811,7 +811,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -868,7 +868,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -926,7 +926,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1175,7 +1175,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1236,7 +1236,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1348,7 +1348,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1408,7 +1408,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1469,7 +1469,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1529,7 +1529,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1588,7 +1588,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1649,7 +1649,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1683,7 +1683,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
     
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1760,7 +1760,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1816,7 +1816,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1895,7 +1895,7 @@ Greetings from TripGotik, a KKDAY partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -1954,7 +1954,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -2013,7 +2013,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -2073,7 +2073,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
   
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -2323,7 +2323,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
@@ -2386,7 +2386,7 @@ Greetings from Trip Gotik Get Your Guide Local Partner.
 
 We are excited to inform you that your booking for the Nusa Penida Trip with the following details is confirmed:
           
-* Booking Code  : ${bookingCode}
+* Booking Code  : ${bookingCode.trim()}
 * Activity Date : ${activityDate}
 * Total Person  : ${pax} ${paxLabel}
 ${polaroidData ? `* Add on       : ${polaroidData}\n` : ''}
